@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>临渊行 | 游戏展示</title>
+  <meta name="description" content="《临渊行》单页游戏展示网站，呈现古建筑、迷雾与神秘叙事氛围。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="site-nav" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="临渊行首页">
+        <span>LYX</span>
+        临渊行
+      </a>
+      <div class="nav-links">
+        <a href="#pv">影像</a>
+        <a href="#characters">角色</a>
+        <a href="#gallery">场景</a>
+      </div>
+    </nav> 
+
+    <div class="hero-content">
+      <p class="eyebrow">雾起旧都 · 临渊而行</p>
+      <h1>临渊行</h1>
+      <p class="hero-copy">山门半掩，灯火未熄。循雾入城，听一段被尘封的旧事。</p>
+      <div class="hero-actions" aria-label="首屏操作">
+        <button class="btn btn-primary" type="button" data-scroll-target="#pv">观看 PV</button>
+        <button class="btn btn-ghost" type="button" data-scroll-target="#gallery">查看截图</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro-section" aria-labelledby="intro-title">
+      <div class="section-kicker">WORLD</div>
+      <div class="intro-grid">
+        <h2 id="intro-title">雾中仍有旧时回声</h2>
+        <p>
+          《临渊行》以一座沉入迷雾的古城为舞台。废弃的宫阙、仍在运转的机关、无人应答的长街，共同指向一场被刻意抹去的变故。玩家将在不同区域之间行走、辨认痕迹，并在克制的叙事中逐步接近深渊边缘的真相。
+        </p>
+      </div>
+    </section>
+
+    <section class="section pv-section" id="pv" aria-labelledby="pv-title">
+      <div class="section-heading compact-heading">
+        <div>
+          <span class="section-kicker">PV</span>
+          <h2 id="pv-title">前导影像</h2>
+        </div>
+        <p>雾色入城，旧事将醒。</p>
+      </div>
+      <div class="video-shell">
+        <div class="video-meta" aria-hidden="true">
+          <span>PV-01</span>
+          <span>临渊初启</span>
+        </div>
+        <div class="video-stage">
+          <video class="main-video" src="assets/videos/pv.mp4" preload="metadata" poster="assets/images/hero.jpg"></video>
+          <button class="video-play" type="button" aria-label="播放前导影像">
+            <span>播放前导影像</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section character-section" id="characters" aria-labelledby="character-title">
+      <div class="section-heading compact-heading">
+        <div>
+          <span class="section-kicker">CHARACTER</span>
+          <h2 id="character-title">雾中人影</h2>
+        </div>
+        <p>只给片段，不急于揭名。</p>
+      </div>
+
+      <div class="character-board">
+        <article class="clue-card clue-card-profile">
+          <div class="clue-media profile-image">
+            <img src="assets/images/male-lead-sheet.jpg" alt="临渊行男主设定展示图">
+          </div>
+          <div class="clue-copy">
+            <span class="role-label">线索一 · 设定残页</span>
+            <h3>执灯入雾者</h3>
+            <p>旧案残页中留下他的行迹。服饰、器物与行旅痕迹被收束为资料页，不作为主视觉，只作为人物身份的第一枚证据。</p>
+          </div>
+        </article>
+
+        <article class="clue-card clue-card-teaser">
+          <div class="clue-media teaser-media">
+            <video src="assets/videos/female-lead-teaser.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          </div>
+          <div class="clue-copy">
+            <span class="role-label">线索二 · 片刻回身</span>
+            <h3>雾后回眸</h3>
+            <p>她出现得很短，像被雾吞回的一句话。衣袂与眼神先于姓名，暗示城中更深处的答案。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading compact-heading">
+        <div>
+          <span class="section-kicker">GALLERY</span>
+          <h2 id="gallery-title">旧城片景</h2>
+        </div>
+        <p>庭院、长廊与山门，仍保留无人应答的余温。</p>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-item large" type="button" data-full="assets/images/gallery-1.png" aria-label="预览场景截图一">
+          <img src="assets/images/gallery-1.png" alt="临渊行场景截图一">
+        </button>
+        <button class="gallery-item" type="button" data-full="assets/images/gallery-2.png" aria-label="预览场景截图二">
+          <img src="assets/images/gallery-2.png" alt="临渊行场景截图二">
+        </button>
+        <button class="gallery-item" type="button" data-full="assets/images/gallery-3.jpg" aria-label="预览场景截图三">
+          <img src="assets/images/gallery-3.jpg" alt="临渊行场景截图三">
+        </button>
+        <button class="gallery-item wide" type="button" data-full="assets/images/gallery-4.jpg" aria-label="预览场景截图四">
+          <img src="assets/images/gallery-4.jpg" alt="临渊行场景截图四">
+        </button>
+      </div>
+    </section>
+
+    <section class="section feature-section" aria-labelledby="feature-title">
+      <div class="section-heading compact-heading">
+        <div>
+          <span class="section-kicker">FEATURES</span>
+          <h2 id="feature-title">行至深处</h2>
+        </div>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span>01</span>
+          <h3>古城有形</h3>
+          <p>以建筑比例、光影层次与材质细节建立可信空间，让探索始终发生在可触摸的旧城之中。</p>
+        </article>
+        <article class="feature-card">
+          <span>02</span>
+          <h3>雾声有迹</h3>
+          <p>叙事不依赖密集对白，而由环境痕迹、声音方向与人物片段共同推动。</p>
+        </article>
+        <article class="feature-card">
+          <span>03</span>
+          <h3>旧路有别</h3>
+          <p>从山门、殿宇到隐秘廊道，不同区域保持独立记忆，也逐步拼合为同一场旧事。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-brand">临渊行制作组</p>
+    <p>更多内容即将公开。</p>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-label="截图预览">
+    <button class="lightbox-close" type="button" aria-label="关闭预览">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
