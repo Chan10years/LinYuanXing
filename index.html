@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>临渊行 | 游戏展示</title>
-    <meta name="description" content="《临渊行》单页游戏展示网站，呈现古建筑、迷雾与神秘叙事氛围。">
+    <title>临渊行 | 单页游戏官网</title>
+    <meta name="description" content="《临渊行》单页游戏官网。乱世将倾，天道失序，人在深渊之前守住最后一点人性。">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,12 +24,12 @@
         </nav>
 
         <div class="hero-content">
-            <p class="eyebrow">雾起旧都 · 临渊而行</p>
-            <h1>临渊行</h1>
-            <p class="hero-copy">山门半掩，灯火未熄。循雾入城，听一段被尘封的旧事。</p>
+            <p class="eyebrow">乱世将倾 · 临渊而行</p>
+            <h1>天不曾垂怜众生。可人，未必甘心认命。</h1>
+            <p class="hero-copy">王朝将倾，邪祟横行。有人顺势沉沦，有人拔剑向深渊。</p>
             <div class="hero-actions" aria-label="首屏操作">
-                <button class="btn btn-primary" type="button" data-scroll-target="#pv">观看 PV</button>
-                <button class="btn btn-ghost" type="button" data-scroll-target="#features">地图寻迹</button>
+                <button class="btn btn-primary" type="button" data-scroll-target="#pv">观看前导</button>
+                <button class="btn btn-ghost" type="button" data-scroll-target="#features">进入乱世</button>
             </div>
         </div>
     </header>
@@ -38,9 +38,9 @@
         <section class="section intro-section" aria-labelledby="intro-title">
             <div class="section-kicker">WORLD</div>
             <div class="intro-grid">
-                <h2 id="intro-title">雾中仍有旧时回声</h2>
+                <h2 id="intro-title">乱世不只夺命，也改人</h2>
                 <p>
-                    《临渊行》以一座沉入迷雾的古城为舞台。废弃的宫阙、仍在运转的机关、无人应答的长街，共同指向一场被刻意抹去的变故。玩家将在不同区域之间行走、辨认痕迹，并在克制的叙事中逐步接近深渊边缘的真相。
+                    《临渊行》的世界里，王法尚在墙上，天道却已偏离。邪祟、饥荒与权欲把人一步步推向异化，活下去本身也会变成代价。主角借深渊之力求生，却必须在每一次出手后，确认自己还没有彻底成为深渊的一部分。
                 </p>
             </div>
         </section>
@@ -49,20 +49,20 @@
             <div class="section-heading compact-heading">
                 <div>
                     <span class="section-kicker">PV</span>
-                    <h2 id="pv-title">前导影像</h2>
+                    <h2 id="pv-title">深渊将启</h2>
                 </div>
-                <p>雾色入城，旧事将醒。</p>
+                <p>看见秩序裂开的第一道缝。</p>
             </div>
             <div class="video-shell">
                 <div class="video-meta" aria-hidden="true">
                     <span>PV-01</span>
-                    <span>临渊初启</span>
+                    <span>深渊初启</span>
                 </div>
                 <div class="video-stage">
                     <video class="main-video" src="assets/videos/pv.mp4" preload="metadata"
                         poster="assets/images/hero.jpg"></video>
-                    <button class="video-play" type="button" aria-label="播放前导影像">
-                        <span>播放前导影像</span>
+                    <button class="video-play" type="button" aria-label="观看前导影像">
+                        <span>观看前导影像</span>
                     </button>
                 </div>
             </div>
@@ -72,33 +72,131 @@
             <div class="section-heading compact-heading">
                 <div>
                     <span class="section-kicker">CHARACTER</span>
-                    <h2 id="character-title">雾中人影</h2>
+                    <h2 id="character-title">临渊之人</h2>
                 </div>
-                <p>只给片段，不急于揭名。</p>
+                <p>有人借力求生，有人记得来处，也有人把指引说得太稳。</p>
             </div>
 
             <div class="character-board">
-                <article class="clue-card clue-card-video">
-                    <div class="clue-media character-media">
-                        <video src="assets/videos/male-lead-bigskill.mp4" playsinline preload="metadata" muted></video>
-                        <button class="character-play" type="button" aria-label="播放男主视频"><span>他是谁？</span></button>
+                <article class="clue-card clue-card-video character-card character-card-female">
+                    <div class="clue-media character-media character-main-media">
+                        <video src="assets/videos/female-lead-teaser.mp4" playsinline preload="metadata" muted
+                            loop></video>
                     </div>
-                    <div class="clue-copy">
-                        <span class="role-label">线索一 · 术法一瞬</span>
-                        <h3>执灯破雾者</h3>
-                        <p>灯影压低时，符火才真正亮起。他的招式不张扬，只在雾隙间留下短促而明确的痕迹。</p>
+                    <div class="clue-copy character-copy">
+                        <span class="role-label">初心未灭</span>
+                        <h3>她仍信人间有光</h3>
+                        <p>她知道这世道有多坏，也仍愿意相信，人能彼此相救。</p>
+                        <div class="character-actions-row">
+                            <button class="character-action" type="button" data-character-play>凝看其心</button>
+                            <button class="character-action" type="button" data-character-profile
+                                data-character-id="female">查看人物</button>
+                        </div>
                     </div>
                 </article>
 
-                <article class="clue-card clue-card-video">
-                    <div class="clue-media character-media">
-                        <video src="assets/videos/female-lead-teaser.mp4" playsinline preload="metadata" muted></video>
-                        <button class="character-play" type="button" aria-label="播放女主视频"><span>她是谁？</span></button>
+                <article class="clue-card clue-card-video character-card character-card-male">
+                    <div class="clue-media character-media character-main-media">
+                        <video src="assets/videos/male-lead-face.mp4" playsinline preload="metadata" muted loop></video>
                     </div>
-                    <div class="clue-copy">
-                        <span class="role-label">线索二 · 片刻回身</span>
-                        <h3>雾后回眸</h3>
-                        <p>她出现得很短，像被雾吞回的一句话。衣袂与眼神先于姓名，暗示城中更深处的答案。</p>
+                    <div class="clue-copy character-copy">
+                        <span class="role-label">半身临渊</span>
+                        <h3>他仍不肯低头</h3>
+                        <p>为了活下去，他不得不借怪物之力前行；为了不彻底变成怪物，他又必须不断向自己动刀。</p>
+                        <div class="character-actions-row">
+                            <button class="character-action" type="button" data-character-expand aria-expanded="false"
+                                aria-controls="male-skill-panel">见其锋芒</button>
+                            <button class="character-action" type="button" data-character-profile
+                                data-character-id="male">查看人物</button>
+                        </div>
+                    </div>
+                    <div class="character-reveal" id="male-skill-panel" aria-hidden="true">
+                        <div class="reveal-copy">
+                            <span>深渊之力</span>
+                            <strong>锋芒未净</strong>
+                        </div>
+                        <div class="reveal-media">
+                            <video src="assets/videos/male-lead-bigskill.mp4" playsinline preload="metadata" muted
+                                loop></video>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="legacy-figures">
+                <div class="legacy-heading">
+                    <span class="section-kicker">BEFORE</span>
+                    <h3>前因旧影</h3>
+                    <p>有人先看见天道异变，有人先一步把自己献给了黑暗。</p>
+                </div>
+                <div class="legacy-grid">
+                    <article class="legacy-card">
+                        <span class="role-label">先见者</span>
+                        <h4>见过另一面的求道者</h4>
+                        <p>他先看见了天道的异变，也第一个被答案逼疯。</p>
+                        <button class="character-action" type="button" data-character-profile
+                            data-character-id="nameless">查看人物</button>
+                    </article>
+                    <article class="legacy-card">
+                        <span class="role-label">旧世遗祟</span>
+                        <h4>披着道袍的食人者</h4>
+                        <p>百年前是主厨，百年后成了道长；他把成仙、强权与吃人都当成天道。</p>
+                        <button class="character-action" type="button" data-character-profile
+                            data-character-id="master">查看人物</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section story-section" aria-labelledby="story-title">
+            <div class="section-heading compact-heading">
+                <div>
+                    <span class="section-kicker">STORY</span>
+                    <h2 id="story-title">世道已坏，故事方始</h2>
+                </div>
+                <p>有人先看见坠落，有人被迫走进深渊，也有人仍想作为人活下去。</p>
+            </div>
+
+            <div class="story-grid">
+                <article class="story-panel">
+                    <h3>世界观</h3>
+                    <p>这是一个天意失序、人心先坏的时代。怪物并不只生在山野，也生在庙堂、戒律、欲望与权力之中。想活下去，就得靠近黑暗；想不被黑暗吞没，就得不断向自己动刀。</p>
+                    <p>你将见证一个人如何在异化与本心之间反复撕扯，最终向整个吃人的系统拔剑。</p>
+                </article>
+                <article class="story-panel">
+                    <h3>剧情梗概</h3>
+                    <p>村毁之后，两名幸存的少年少女被一位道长收留，从此学剑、斩妖，也在乱世边缘艰难求生。可随着异象渐多，他们逐渐发现，真正可怕的东西未必总披着怪物的外形。</p>
+                    <p>当信任被撕开，生路与人性被同时逼到尽头，主角被迫吞下本不该属于人的力量，自此踏上一条以黑暗终结黑暗、以异化对抗异化的路。江湖、庙堂、宗门与众生都在坠落，而他要决定，自己究竟会成为怪物，还是成为这个时代仍敢拔剑的人。
+                    </p>
+                </article>
+            </div>
+
+            <div class="lore-accordion" aria-label="设定补充">
+                <article class="lore-item">
+                    <button class="lore-toggle" type="button" aria-expanded="false">
+                        <span>灵性</span>
+                    </button>
+                    <div class="lore-body" aria-hidden="true">
+                        <p>灵性是一个人最精华、最宝贵的部分。人死之后，会留下一缕看不见、摸不着的灵性，平常难以察觉，只有在灵视加深时才会被看见。被吞噬的灵性会沦为丹材，被承载的灵性则仍能保有自身。</p>
+                        <p>对师傅而言，灵性是可以炼化、吞吃和提纯的资源；对主角而言，灵性是可以承载、守护与共生的寄托。</p>
+                    </div>
+                </article>
+                <article class="lore-item">
+                    <button class="lore-toggle" type="button" aria-expanded="false">
+                        <span>器体质</span>
+                    </button>
+                    <div class="lore-body" aria-hidden="true">
+                        <p>男女主都拥有“器”体质，能够承载外来的灵性，使其不至消散。女主体量较小，男主则是“大器”，能承载更多、更重的寄托。也正因如此，他才有机会在异化与本心之间勉强维持某种平衡。</p>
+                        <p>师傅想吃掉他们，并不只是因为修炼所需，更因为他们本身就是最好的容器与提纯器。</p>
+                    </div>
+                </article>
+                <article class="lore-item">
+                    <button class="lore-toggle" type="button" aria-expanded="false">
+                        <span>师傅动机</span>
+                    </button>
+                    <div class="lore-body" aria-hidden="true">
+                        <p>师傅追求的从来只有力量与成仙。他把自己看得近乎天道，把众生视作祭品，把吃人解释成顺应天道。百年修炼没有让他更接近超脱，只让他更彻底地相信，力量比道德重要。</p>
+                        <p>他并非一时失足，而是在每一个需要选择的时刻，都主动放弃底线，最终把自己活成了黑暗时代的一部分。</p>
                     </div>
                 </article>
             </div>
@@ -108,42 +206,42 @@
             <div class="section-heading compact-heading">
                 <div>
                     <span class="section-kicker">FEATURES</span>
-                    <h2 id="feature-title">行至深处</h2>
+                    <h2 id="feature-title">世道已坏</h2>
                 </div>
             </div>
 
             <div class="feature-grid">
                 <article class="feature-card" role="button" tabindex="0" data-feature-gallery="ancient-city"
-                    aria-label="查看古城有形图片">
+                    aria-label="查看古城仍立图片">
                     <span>01</span>
-                    <h3>古城有形</h3>
-                    <p>楼阁、庙宇与深院依次铺开，石阶和檐影把秩序压进每一寸空间。人一踏入此地，就会先感到古城中心那种庄重而肃穆的静压。</p>
+                    <h3>古城仍立</h3>
+                    <p>楼阁、庙宇与深院还维持着旧日礼制，石阶干净，牌匾端正。可越往里走，越能看见秩序外壳下的腐坏：沉默的人、失灵的规矩，以及没人敢问的供奉。</p>
                 </article>
                 <article class="feature-card" role="button" tabindex="0" data-feature-gallery="mist-village"
-                    aria-label="查看雾声有迹图片">
+                    aria-label="查看荒村未眠图片">
                     <span>02</span>
-                    <h3>雾声有迹</h3>
-                    <p>荒屋临水，风雨久侵，残灯与断木还留着旧日生活的痕迹。这里几乎没有回应，只剩潮湿的雾气和迟迟不散的凄凉。</p>
+                    <h3>荒村未眠</h3>
+                    <p>水汽压着破屋，泥墙里像还留着人的体温。这里的凄凉不是荒废后的安静，而是有些事明明结束了，却仍在夜里一遍遍回来。</p>
                 </article>
                 <article class="feature-card" role="button" tabindex="0" data-feature-gallery="old-street"
-                    aria-label="查看旧路有别图片">
+                    aria-label="查看城镇有市图片">
                     <span>03</span>
-                    <h3>旧路有别</h3>
-                    <p>街巷、铺面与灯火把城镇的烟火气重新托起，行走其间能听见人声曾经聚拢的方向。它比荒村更热闹，也让整座旧城多了一层活着的余温。</p>
+                    <h3>城镇有市</h3>
+                    <p>灯火、人声、买卖都还热着，像乱世尚未真正落到这里。可热闹之下，价码早已标好：消息可以买，命也可以买，笑脸后面未必是活人心肠。</p>
                 </article>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p class="footer-brand">临渊行制作组</p>
-        <p>更多内容即将公开。</p>
+        <p class="footer-brand">临渊行</p>
+        <p>乱世未定，深渊仍在。</p>
     </footer>
 
     <div class="lightbox" aria-hidden="true" role="dialog" aria-label="截图预览">
         <div class="lightbox-panel">
             <div class="lightbox-meta">
-                <h2 class="lightbox-title">场景</h2>
+                <h2 class="lightbox-title">乱世一隅</h2>
                 <span class="lightbox-counter">1 / 1</span>
             </div>
             <div class="lightbox-stage">
@@ -151,8 +249,25 @@
                 <img src="" alt="">
                 <button class="lightbox-nav lightbox-next" type="button" aria-label="下一张">›</button>
             </div>
+            <div class="lightbox-copy" aria-live="polite">
+                <h3 class="lightbox-copy-title"></h3>
+                <div class="lightbox-copy-body"></div>
+            </div>
         </div>
         <button class="lightbox-close" type="button" aria-label="关闭预览">×</button>
+    </div>
+
+    <div class="character-modal" aria-hidden="true" role="dialog" aria-label="人物介绍">
+        <div class="character-modal-panel">
+            <button class="character-modal-close" type="button" aria-label="关闭人物介绍">×</button>
+            <div class="character-modal-meta">
+                <span class="section-kicker">PROFILE</span>
+                <h2 class="character-modal-title"></h2>
+                <p class="character-modal-summary"></p>
+            </div>
+            <div class="character-modal-body"></div>
+            <div class="character-modal-tags" aria-label="人物关键词"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>
