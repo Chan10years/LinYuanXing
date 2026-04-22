@@ -25,43 +25,43 @@ const videoPlay = document.querySelector(".video-play");
 
 const featureGalleries = {
   "ancient-city": {
-    title: "古城仍立",
+    title: "御敕玄观",
     images: [
       {
         src: "assets/images/gallery-1.png",
         alt: "秩序外壳尚存的古城截图一",
-        clueTitle: "古城仍立",
-        clueBody: ["礼制尚在，门阶尚净。", "只是城中人说话越来越轻，像怕惊动什么。"],
+        clueTitle: "山门承敕",
+        clueBody: ["敕额仍悬在门上，香火与名声一起压住了整座道观。", "人们先看见的是正统与体面，很少有人再往更深处想。"],
       },
       {
         src: "assets/images/gallery-2.jpg",
         alt: "秩序外壳尚存的古城截图二",
         clueTitle: "深院无声",
-        clueBody: ["院门未闭，香火未断。", "许多规矩还被守着，却已没人敢问缘由。"],
+        clueBody: ["院门层层相接，廊下静得只剩风声。", "弟子往来都有规矩，久而久之，连沉默也像成了规矩的一部分。"],
       },
       {
         src: "assets/images/gallery-3.jpg",
         alt: "秩序外壳尚存的古城截图三",
-        clueTitle: "旧仪未废",
-        clueBody: ["檐下仍悬着旧朝的名号。", "它们端正、肃穆，也冷得不近人情。"],
+        clueTitle: "旧制森然",
+        clueBody: ["礼器、匾额与法度都还摆在原来的位置上。", "这里没有半点败落之相，只是太整齐了，整齐得像把许多事都压进了看不见的地方。"],
       },
       {
         src: "assets/images/gallery-4.jpg",
         alt: "秩序外壳尚存的古城截图四",
-        clueTitle: "阶前余灰",
-        clueBody: ["灰烬被扫到石阶边。", "像有人刚刚清理过，又像清理本身才是仪式。"],
+        clueTitle: "阶前净痕",
+        clueBody: ["石阶总被扫得很干净，连灰都留不住。", "可观中人都知道，有些东西没有留在原处，只是被更早一步收走了。"],
       },
       {
         src: "assets/images/gallery-5.jpg",
         alt: "秩序外壳尚存的古城截图五",
-        clueTitle: "供奉仍明",
-        clueBody: ["灯盏还亮着。", "可受供者沉默太久，供奉者也渐渐不像活人。"],
+        clueTitle: "供灯未熄",
+        clueBody: ["灯火照着供台，也照着长久不曾被说破的禁忌。", "每逢异事平息，相关之物总由师傅亲自收存，从不示人。"],
       },
       {
         src: "assets/images/gallery-6.jpg",
         alt: "秩序外壳尚存的古城截图六",
-        clueTitle: "城心渐冷",
-        clueBody: ["越接近城心，路越干净。", "干净到看不见挣扎，只剩被留下的秩序。"],
+        clueTitle: "池影沉思",
+        clueBody: ["后院池水很静，鱼群终日游在一处。", "弟子们偶尔会看见师傅独自立在岸边，久久望着池中，不知是在看鱼，还是在想别的什么。"],
       },
     ],
   },
