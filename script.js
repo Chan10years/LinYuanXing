@@ -24,115 +24,185 @@ const mainVideo = document.querySelector(".main-video");
 const videoPlay = document.querySelector(".video-play");
 
 const featureGalleries = {
-  "ancient-city": {
+  "imperial-temple": {
     title: "御敕玄观",
     images: [
       {
+        src: "assets/images/6.imperial-taoist-temple.png",
+        alt: "御敕玄观主景",
+        clueTitle: "山门未闭",
+        clueBody: [
+          "被御敕册封的玄观仍旧香火鼎盛，也仍被视作一方秩序尚存的证明。",
+          "可真正让人难以回望的，从来不是高悬匾额，而是那些被妥善带回观中的旧痕。"
+        ],
+      },
+      {
         src: "assets/images/gallery-1.png",
-        alt: "秩序外壳尚存的古城截图一",
-        clueTitle: "山门承敕",
-        clueBody: ["敕额仍悬在门上，香火与名声一起压住了整座道观。", "人们先看见的是正统与体面，很少有人再往更深处想。"],
+        alt: "御敕玄观补充场景一",
+        clueTitle: "敕额高悬",
+        clueBody: [
+          "礼制与威望为这座玄观披上了最正统的外衣。",
+          "人们先看见的是体面与安定，很少再继续追问它还守着什么。"
+        ],
       },
       {
         src: "assets/images/gallery-2.jpg",
-        alt: "秩序外壳尚存的古城截图二",
+        alt: "御敕玄观补充场景二",
         clueTitle: "深院无声",
-        clueBody: ["院门层层相接，廊下静得只剩风声。", "弟子往来都有规矩，久而久之，连沉默也像成了规矩的一部分。"],
+        clueBody: [
+          "院门层层相接，风声总比人声更容易传得更深。",
+          "越往里走，越能感觉到某些规矩并非写在墙上，却始终被默认遵守。"
+        ],
       },
       {
         src: "assets/images/gallery-3.jpg",
-        alt: "秩序外壳尚存的古城截图三",
-        clueTitle: "旧制森然",
-        clueBody: ["礼器、匾额与法度都还摆在原来的位置上。", "这里没有半点败落之相，只是太整齐了，整齐得像把许多事都压进了看不见的地方。"],
+        alt: "御敕玄观补充场景三",
+        clueTitle: "旧制犹在",
+        clueBody: [
+          "器物、法度与香火都摆在它们该在的位置。",
+          "这份井然秩序本身，反而让某些被收起的细节显得更加醒目。"
+        ],
       },
       {
         src: "assets/images/gallery-4.jpg",
-        alt: "秩序外壳尚存的古城截图四",
+        alt: "御敕玄观补充场景四",
         clueTitle: "阶前净痕",
-        clueBody: ["石阶总被扫得很干净，连灰都留不住。", "可观中人都知道，有些东西没有留在原处，只是被更早一步收走了。"],
+        clueBody: [
+          "石阶总被打扫得很干净，像什么都没有留下。",
+          "可在真正知道的人眼里，空白本身也可能是一种线索。"
+        ],
       },
       {
         src: "assets/images/gallery-5.jpg",
-        alt: "秩序外壳尚存的古城截图五",
+        alt: "御敕玄观补充场景五",
         clueTitle: "供灯未熄",
-        clueBody: ["灯火照着供台，也照着长久不曾被说破的禁忌。", "每逢异事平息，相关之物总由师傅亲自收存，从不示人。"],
+        clueBody: [
+          "供台前的灯火一夜未断，照见的是敬意，也是沉默。",
+          "有些事并非被忘记，只是长久以来都被默认为不必多问。"
+        ],
       },
       {
         src: "assets/images/gallery-6.jpg",
-        alt: "秩序外壳尚存的古城截图六",
+        alt: "御敕玄观补充场景六",
         clueTitle: "池影沉思",
-        clueBody: ["后院池水很静，鱼群终日游在一处。", "弟子们偶尔会看见师傅独自立在岸边，久久望着池中，不知是在看鱼，还是在想别的什么。"],
+        clueBody: [
+          "后院池水很静，鱼群终日在一处游动。",
+          "弟子偶尔看见观主久立池边，却从无人听他提起那片水底究竟映着什么。"
+        ],
       },
     ],
   },
-  "mist-village": {
+  "ancient-city": {
+    title: "古城旧地",
+    images: [
+      {
+        src: "assets/images/7.ancient-city.png",
+        alt: "古城旧地主景",
+        clueTitle: "旧城未息",
+        clueBody: [
+          "城还在，规矩也还在。许多人仍像往常一样生活，只是不再轻易谈起从前。",
+          "真正没有散去的，往往不是某一场风波，而是那场风波留下来的秩序裂缝。"
+        ],
+      },
+    ],
+  },
+  "abandoned-village": {
     title: "荒村未眠",
     images: [
       {
+        src: "assets/images/8.abandoned-village.png",
+        alt: "荒村未眠主景",
+        clueTitle: "旧雨未歇",
+        clueBody: [
+          "荒村的安静并不轻松，它更像一个被拖得太久的停顿。",
+          "空屋里没有答案，却留下了许多还未被说完的话。"
+        ],
+      },
+      {
         src: "assets/images/village-1.png",
-        alt: "荒村全景截图",
-        clueTitle: "荒村全景",
-        clueBody: ["清河镇早已迁空，风还认得回来的路。"],
+        alt: "荒村未眠补充场景一",
+        clueTitle: "清河旧地",
+        clueBody: [
+          "风还认得回来的路，人却未必还在原处。",
+          "有些地方之所以荒废，不是因为没人记得，而是因为记得的人太少。"
+        ],
       },
       {
         src: "assets/images/village-2.jpg",
-        alt: "妇人残笔截图",
-        clueTitle: "妇人残笔",
+        alt: "荒村未眠补充场景二",
+        clueTitle: "残笔留痕",
         clueBody: [
-          "“镇上女眷都说，我是清河镇最风光的夫人。”",
-          "“只是官人近来越发阴沉，夜里总在磨刀。”",
-          "“我只求荣华安稳，别出祸事。”",
+          "旧字句常常比人更能留下来。",
+          "越是零散的记录，越容易在后来变成重新拼合旧事的钥匙。"
         ],
       },
       {
         src: "assets/images/village-3.jpg",
-        alt: "断腿板凳与厨规截图",
-        clueTitle: "断腿板凳与厨规",
+        alt: "荒村未眠补充场景三",
+        clueTitle: "断处无声",
         clueBody: [
-          "一条榆木长凳，断成三截。",
-          "凳腿内侧刻着字：“张二因多言，打断腿，逐出厨房。”",
-          "墙上厨规仍在：“主厨之言，即为天理。”",
-          "“食材来历，不得过问。”",
+          "真正令人不安的，不是被打断的东西，而是打断之后谁都不再追问。",
+          "断裂会留在物件上，也会留在人和地方之间。"
         ],
       },
       {
         src: "assets/images/village-4.jpg",
-        alt: "井边夜哭截图",
-        clueTitle: "井边夜哭",
-        clueBody: ["后人说，夜分常有妇人哀哭井侧。", "她只反复一句：", "“还我儿。”"],
+        alt: "荒村未眠补充场景四",
+        clueTitle: "井边回音",
+        clueBody: [
+          "夜里若有人听见回声，也未必知道它来自过去还是来自自己。",
+          "荒废之地最擅长保存的，是迟迟没有被安放的情绪。"
+        ],
       },
       {
         src: "assets/images/village-5.jpg",
-        alt: "残碑录截图",
-        clueTitle: "残碑录",
+        alt: "荒村未眠补充场景五",
+        clueTitle: "残页未终",
         clueBody: [
-          "《清河镇珍味楼兴废记》",
-          "“天启四年秋，主厨忽挈其妻子，一夕遁去，莫知所终。”",
-          "“不期年，十室九空，向之乐土，鞠为荒墟。”",
+          "哪怕只剩零散纸页，旧案也会以自己的方式继续存在。",
+          "没有说完的部分，往往正是后来的人必须亲自走进去的部分。"
         ],
       },
     ],
   },
-  "old-street": {
+  "town-market": {
     title: "城镇有市",
     images: [
       {
+        src: "assets/images/9.daytime-town-market.png",
+        alt: "城镇有市主景",
+        clueTitle: "白日喧声",
+        clueBody: [
+          "白日里人声鼎沸，买卖照常，乱世似乎也可以暂时退到街巷之外。",
+          "可真正流通的不只是货物，还有消息、立场与各自想掩住的来历。"
+        ],
+      },
+      {
         src: "assets/images/citystreet-1.jpg",
-        alt: "人声与交易交错的城镇截图一",
+        alt: "城镇有市补充场景一",
         clueTitle: "灯火照市",
-        clueBody: ["摊贩仍在吆喝，酒旗仍在风里摆动。", "热闹是真，危险也是真。"],
+        clueBody: [
+          "热闹是真，戒心也是真。",
+          "越是人多的地方，越需要学会分辨谁在说话，谁在试探。"
+        ],
       },
       {
         src: "assets/images/citystreet-2.jpg",
-        alt: "人声与交易交错的城镇截图二",
+        alt: "城镇有市补充场景二",
         clueTitle: "价码已明",
-        clueBody: ["消息在暗巷里转手，姓名也能折成银钱。", "没人问来处，只问够不够价。"],
+        clueBody: [
+          "消息、路引与姓名，都可能在某个角落被折算成另一种价值。",
+          "乱世从不只靠刀兵改变走向，也靠市井里悄无声息的交换。"
+        ],
       },
       {
         src: "assets/images/citystreet-3.jpg",
-        alt: "人声与交易交错的城镇截图三",
-        clueTitle: "笑面藏刃",
-        clueBody: ["人群把恶意藏得很好。", "直到擦肩而过时，才听见袖中铁器轻响。"],
+        alt: "城镇有市补充场景三",
+        clueTitle: "笑面藏意",
+        clueBody: [
+          "越是平静的交谈，越可能藏着彼此都没有明说的条件。",
+          "有时候，人心的转向比城门开合还要更快。"
+        ],
       },
     ],
   },
@@ -141,39 +211,39 @@ const featureGalleries = {
 const characterProfiles = {
   male: {
     title: "半身临渊之人",
-    summary: "越是靠近深渊，越要拼命守住还像人的那一部分。",
+    summary: "越是被推近渊边，越要拼命守住自己仍愿意站在人这一边的那部分。",
     body: [
-      "村破亲亡后，他活了下来，也从那一刻起对怪物与乱世生出刻骨的敌意。表面寡言冷静，心思却比谁都深。为了活下去，也为了向黑暗复仇，他不得不借深渊之力前行；可每向前一步，都意味着更靠近自己最厌恶的东西。",
-      "他不是天生完满的英雄，只是在不断失去之后，仍不肯彻底沉下去的人。",
+      "他在旧案之后活了下来，也从那时起学会了如何在失序之中继续前行。为了求生，他被迫靠近本不该属于人的力量；为了不彻底偏离自己，他又必须时时提醒自己为何而战。",
+      "在御敕玄观的山门之下，他既是弟子，也是被命运推到边缘的人。越是接近真相，他越明白真正艰难的并不只是斩妖，而是在借力之后仍不愿轻易认命。"
     ],
-    tags: ["乱世遗孤", "半身染污", "仍不低头"],
+    tags: ["乱世遗孤", "器体质", "临渊未坠"],
   },
   female: {
     title: "仍信人间有光的人",
-    summary: "她知道这世道有多坏，也仍愿意相信人能彼此相救。",
+    summary: "她见过人心的裂痕，也知道善意在乱世里多么脆弱，可她仍不肯把救人当成笑话。",
     body: [
-      "她比男主更愿意救人，也更早把“行侠”当成自己要走的路。她知道这世道有多坏，也见过人心如何崩塌，却没有因此放弃相信善意。她并非脆弱的陪衬，恰恰相反，她在最残酷的时候仍能看清现实，并果断做出选择。",
-      "她既是男主心中最温柔的牵挂，也是他濒临堕落时，最后那一点不肯熄灭的火。",
+      "她比许多人都更早意识到这个世道的残酷，却没有因此放弃善意。她知道秩序会崩塌，人心会动摇，也知道仍有人值得被救，仍有事值得被坚持。",
+      "她既是同行者，也是那道始终提醒男主别彻底沉下去的目光。面对玄观深处的旧事，她未必最冷静，却往往最先看清什么东西仍值得守住。"
     ],
-    tags: ["信人", "敢决断", "行侠之念"],
+    tags: ["器体质", "行侠之念", "心火未熄"],
   },
   nameless: {
-    title: "见过另一面的求道者",
-    summary: "他看见了乱世将至，也看见了“吃人的那一面”。",
+    title: "游方的先见者",
+    summary: "他行走于荒村、古城与山门之外，像一条被遗落在旧事边缘的线索，知道很多事，却从不一次说完。",
     body: [
-      "他在大灾与流徙之间察觉天道失常，看见乱世将至，也看见“吃人的那一面”正逐渐显露。怀疑、求证、崩溃，是他走向真相的三步。为了证实自己的判断，他亲手跨过禁线，终于窥见部分真实。",
-      "可那份真实没有把他送往超脱，只把他推向毁灭。留下笔记、功法与未竟之因后，他选择自尽，把那个问题交给后来的人去回答。",
+      "他行走四方，像旁观者，也像旧案曾经的亲历者。许多他看见的东西并不能轻易说出口，许多他留下的话更像是给后来人的提示，而不是现成的答案。",
+      "在这个关于玄观、灵性与旧事的故事里，他从不是喧宾夺主的人，却总会在最关键的地方留下足够让人重新回头的痕迹。"
     ],
-    tags: ["先见者", "求道者", "证道而崩"],
+    tags: ["游方道人", "旁观者", "旧案残影"],
   },
   master: {
-    title: "披着道袍的食人者",
-    summary: "他追求的从来不是大道，只是把众生踩成登天的阶梯。",
+    title: "沉默的观主",
+    summary: "他是御敕玄观的观主，持守秩序，也把许多答案收进了山门深处。",
     body: [
-      "百年前，他只是清河镇珍味楼的主厨，手艺绝顶，性情严酷，习惯以恐惧统治厨房。与无名道人的交易之后，他亲手烹子，换来一条以吃人为阶的修炼之路。从那以后，他再不怀疑，只全盘接受“吃人才是天道”。",
-      "如今的他披着道长外壳，实则是强权、贪欲与异化的化身。众生在他眼里只是祭品，男女主更是难得的“器”。吞下他们，便等于吞下整村人的灵性。",
+      "他立观、收徒、斩妖，在乱世中为许多人撑起了仍可依附的一方山门。外人眼里，他是稳重而值得信任的正统观主；弟子眼里，他却也始终带着一些难以看透的沉默。",
+      "每次异象平息之后，他总会亲自处理那些不便示人的痕迹。有些残痕被带回观中，有些旧事被留在池水与山门深处。究竟是谨慎、责任，还是别的原因，故事并不会太早给出结论。"
     ],
-    tags: ["成仙执念", "众生为祭", "黑暗化身"],
+    tags: ["正统道门", "御敕观主", "深藏旧事"],
   },
 };
 
@@ -189,6 +259,15 @@ scrollButtons.forEach((button) => {
   });
 });
 
+function renderParagraphs(container, paragraphs) {
+  container.innerHTML = "";
+  paragraphs.forEach((text) => {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = text;
+    container.appendChild(paragraph);
+  });
+}
+
 function renderLightboxImage() {
   if (!activeGallery) {
     return;
@@ -199,14 +278,11 @@ function renderLightboxImage() {
   lightboxCounter.textContent = `${activeIndex + 1} / ${activeGallery.images.length}`;
   lightboxImage.src = image.src;
   lightboxImage.alt = image.alt;
-
-  if (lightboxCopyTitle && lightboxCopyBody) {
-    lightboxCopyTitle.textContent = image.clueTitle || "";
-    lightboxCopyBody.innerHTML = (image.clueBody || [])
-      .map((line) => `<p>${line}</p>`)
-      .join("");
-    lightboxCopyBody.scrollTop = 0;
-  }
+  lightboxCopyTitle.textContent = image.clueTitle || "";
+  lightboxCopyBody.innerHTML = (image.clueBody || [])
+    .map((line) => `<p>${line}</p>`)
+    .join("");
+  lightboxCopyBody.scrollTop = 0;
 }
 
 function openLightbox(galleryKey, startIndex = 0) {
@@ -229,26 +305,25 @@ function closeLightbox() {
   document.body.classList.remove("lightbox-open");
   lightboxImage.src = "";
   lightboxImage.alt = "";
-  if (lightboxCopyTitle && lightboxCopyBody) {
-    lightboxCopyTitle.textContent = "";
-    lightboxCopyBody.innerHTML = "";
-  }
+  lightboxCopyTitle.textContent = "";
+  lightboxCopyBody.innerHTML = "";
   activeGallery = null;
   activeIndex = 0;
 }
 
-function renderParagraphs(container, paragraphs) {
-  container.innerHTML = "";
-  paragraphs.forEach((text) => {
-    const paragraph = document.createElement("p");
-    paragraph.textContent = text;
-    container.appendChild(paragraph);
-  });
+function showAdjacentImage(direction) {
+  if (!activeGallery) {
+    return;
+  }
+
+  const total = activeGallery.images.length;
+  activeIndex = (activeIndex + direction + total) % total;
+  renderLightboxImage();
 }
 
 function openCharacterModal(characterId) {
   const profile = characterProfiles[characterId];
-  if (!profile || !characterModal) {
+  if (!profile) {
     return;
   }
 
@@ -269,10 +344,6 @@ function openCharacterModal(characterId) {
 }
 
 function closeCharacterModal() {
-  if (!characterModal) {
-    return;
-  }
-
   characterModal.classList.remove("is-open");
   characterModal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("profile-open");
@@ -280,16 +351,6 @@ function closeCharacterModal() {
   characterModalSummary.textContent = "";
   characterModalBody.innerHTML = "";
   characterModalTags.innerHTML = "";
-}
-
-function showAdjacentImage(direction) {
-  if (!activeGallery) {
-    return;
-  }
-
-  const total = activeGallery.images.length;
-  activeIndex = (activeIndex + direction + total) % total;
-  renderLightboxImage();
 }
 
 featureCards.forEach((card) => {
@@ -320,14 +381,12 @@ characterProfileButtons.forEach((button) => {
   });
 });
 
-if (characterModal && characterModalClose) {
-  characterModalClose.addEventListener("click", closeCharacterModal);
-  characterModal.addEventListener("click", (event) => {
-    if (event.target === characterModal) {
-      closeCharacterModal();
-    }
-  });
-}
+characterModalClose.addEventListener("click", closeCharacterModal);
+characterModal.addEventListener("click", (event) => {
+  if (event.target === characterModal) {
+    closeCharacterModal();
+  }
+});
 
 loreToggles.forEach((button) => {
   button.addEventListener("click", () => {
@@ -356,21 +415,27 @@ loreToggles.forEach((button) => {
 characterPlayButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const card = button.closest(".character-card");
-    const video = card.querySelector(".character-main-media video");
+    const panel = card.querySelector(".character-video-inline");
+    const video = panel ? panel.querySelector("video") : null;
+    const playLabel = button.dataset.labelPlay || "观看片段";
+    const pauseLabel = button.dataset.labelPause || "收起片段";
 
-    if (!video) {
+    if (!panel || !video) {
       return;
     }
 
-    video.muted = true;
-    video.loop = true;
+    const isOpen = panel.classList.toggle("is-open");
+    panel.setAttribute("aria-hidden", String(!isOpen));
 
-    if (video.paused) {
+    if (isOpen) {
+      video.muted = true;
+      video.loop = true;
       video.play().catch(() => undefined);
-      button.textContent = "收起其影";
+      button.textContent = pauseLabel;
     } else {
       video.pause();
-      button.textContent = "凝看其心";
+      video.currentTime = 0;
+      button.textContent = playLabel;
     }
   });
 });
@@ -390,24 +455,22 @@ characterExpandButtons.forEach((button) => {
       panel.setAttribute("aria-hidden", String(!isRevealed));
     }
 
-    if (!revealVideo) {
-      return;
-    }
-
-    if (isRevealed) {
-      revealVideo.muted = true;
-      revealVideo.loop = true;
-      revealVideo.play().catch(() => undefined);
-    } else {
-      revealVideo.pause();
-      revealVideo.currentTime = 0;
+    if (revealVideo) {
+      if (isRevealed) {
+        revealVideo.muted = true;
+        revealVideo.loop = true;
+        revealVideo.play().catch(() => undefined);
+      } else {
+        revealVideo.pause();
+        revealVideo.currentTime = 0;
+      }
     }
   });
 });
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
-    if (characterModal && characterModal.classList.contains("is-open")) {
+    if (characterModal.classList.contains("is-open")) {
       closeCharacterModal();
       return;
     }
@@ -426,7 +489,7 @@ if (videoPlay && mainVideo && videoShell) {
   videoPlay.addEventListener("click", () => {
     mainVideo.controls = true;
     videoShell.classList.add("is-playing");
-    mainVideo.play();
+    mainVideo.play().catch(() => undefined);
   });
 
   mainVideo.addEventListener("pause", () => {
