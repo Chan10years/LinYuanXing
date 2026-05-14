@@ -27,9 +27,15 @@
                 <a href="login.html">登录</a>
             </div>
         </nav>
+        <div class="mobile-quick-links" aria-label="移动端快捷入口">
+            <a href="index.html">首页</a>
+            <a href="news.html">新闻</a>
+            <a href="reserve.html">预约</a>
+            <a href="login.html">登录</a>
+        </div>
 
         <div class="hero-content subpage-hero-content">
-            <p class="eyebrow">RESERVATION GATE / STAGE 1B</p>
+            <p class="eyebrow">RESERVATION GATE / STATIC GATE</p>
             <h1>预约入口</h1>
             <p class="hero-copy">
                 本页用于呈现未来预约流程的视觉结构与信息层级。当前不收集昵称、邮箱或平台信息，所有字段都仅作静态占位展示。
@@ -49,7 +55,7 @@
                     <span class="section-kicker">ENTRY</span>
                     <h2 id="reserve-entry-title">预约入口占位</h2>
                 </div>
-                <p>这是一张不可提交的预约表单 UI，用于模拟官网正式开放前的页面气质与交互排布。</p>
+                <p>这是一张不可提交、不可输入的预约表单展示 UI，用于模拟官网正式开放前的页面气质与信息排布。</p>
             </div>
 
             <div class="info-banner" role="note">
@@ -61,66 +67,44 @@
                 <div class="reserve-form-shell">
                     <form class="reserve-form" aria-label="预约占位表单">
                         <div class="form-row">
-                            <label class="form-field" for="reserve-name">
+                            <div class="form-field form-field-static" aria-label="昵称展示">
                                 <span>昵称</span>
-                                <input id="reserve-name" name="reserve-name" type="text" placeholder="请输入昵称（仅展示）">
-                            </label>
-                            <label class="form-field" for="reserve-email">
+                                <div class="field-display">未开放，仅作展示</div>
+                            </div>
+                            <div class="form-field form-field-static" aria-label="邮箱展示">
                                 <span>邮箱</span>
-                                <input id="reserve-email" name="reserve-email" type="email"
-                                    placeholder="example@email.com（仅展示）">
-                            </label>
+                                <div class="field-display">example@email.com</div>
+                            </div>
                         </div>
 
                         <div class="form-row">
-                            <label class="form-field" for="reserve-platform">
+                            <div class="form-field form-field-static" aria-label="平台选择展示">
                                 <span>平台选择</span>
-                                <select id="reserve-platform" name="reserve-platform">
-                                    <option selected>PC</option>
-                                    <option>iOS</option>
-                                    <option>Android</option>
-                                </select>
-                            </label>
-                            <label class="form-field" for="reserve-region">
+                                <div class="field-display">PC / iOS / Android（示意）</div>
+                            </div>
+                            <div class="form-field form-field-static" aria-label="关注分区展示">
                                 <span>关注分区</span>
-                                <select id="reserve-region" name="reserve-region">
-                                    <option selected>国风剧情向</option>
-                                    <option>角色设定更新</option>
-                                    <option>世界观扩展日志</option>
-                                </select>
-                            </label>
+                                <div class="field-display">国风剧情向（示意）</div>
+                            </div>
                         </div>
 
                         <fieldset class="form-field form-field-wide option-field">
                             <legend>关注内容</legend>
                             <div class="option-grid">
-                                <label class="choice-chip">
-                                    <input type="checkbox" checked>
-                                    <span>首曝 PV</span>
-                                </label>
-                                <label class="choice-chip">
-                                    <input type="checkbox">
-                                    <span>角色情报</span>
-                                </label>
-                                <label class="choice-chip">
-                                    <input type="checkbox">
-                                    <span>测试资格</span>
-                                </label>
-                                <label class="choice-chip">
-                                    <input type="checkbox">
-                                    <span>制作日志</span>
-                                </label>
+                                <span class="choice-chip choice-chip-static">首曝 PV</span>
+                                <span class="choice-chip choice-chip-static">角色情报</span>
+                                <span class="choice-chip choice-chip-static">测试资格</span>
+                                <span class="choice-chip choice-chip-static">制作日志</span>
                             </div>
                         </fieldset>
 
-                        <label class="form-field form-field-wide" for="reserve-note">
+                        <div class="form-field form-field-wide form-field-static" aria-label="备注展示">
                             <span>备注占位</span>
-                            <textarea id="reserve-note" name="reserve-note" rows="5"
-                                placeholder="此区域仅展示未来预约页可能出现的补充说明字段。"></textarea>
-                        </label>
+                            <div class="field-display field-display-area">此区域仅展示未来预约页可能出现的补充说明字段。</div>
+                        </div>
 
                         <div class="reserve-actions">
-                            <button class="btn btn-primary btn-static" type="button" aria-disabled="true">暂未开放</button>
+                            <button class="btn btn-primary btn-static" type="button" aria-disabled="true" disabled>暂未开放</button>
                             <p class="reserve-form-note">当前页面不接入真实预约、短信验证、下载资格或数据回传。</p>
                         </div>
                     </form>
@@ -130,7 +114,7 @@
                     <div class="subpage-aside-card">
                         <span class="section-kicker">CURRENT STAGE</span>
                         <h3>为什么先做占位</h3>
-                        <p>Stage 1B 先补齐预约入口的视觉状态，让首页跳转更完整，同时避免误导用户以为预约功能已经正式开放。</p>
+                        <p>当前先补齐预约入口的视觉状态，让首页跳转更完整，同时避免误导用户以为预约功能已经正式开放。</p>
                     </div>
                     <div class="subpage-aside-card">
                         <span class="section-kicker">FUTURE FLOW</span>
