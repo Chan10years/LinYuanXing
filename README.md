@@ -3,7 +3,7 @@
 《临渊行》是一个偏国风志怪与叙事冒险气质的静态游戏官网概念项目，用于展示世界观、角色、场景、PV 与页面信息架构能力。
 
 ## Online Demo
-- Netlify 在线地址：`https://linyuanxing-demo.netlify.app`
+- Netlify 在线地址：`https://linyuanxingwebsite.netlify.app/`
 
 ## 项目定位
 - 面向作品集展示的概念游戏官网
