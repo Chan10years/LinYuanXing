@@ -117,7 +117,10 @@ ul {
 
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: clamp(16px, 2vw, 28px);
+  row-gap: 8px;
   padding: 11px 16px;
   border: 1px solid rgba(199, 166, 106, 0.12);
   background: rgba(12, 12, 11, 0.26);
@@ -755,6 +758,249 @@ p {
   letter-spacing: 0.08em;
 }
 
+.placeholder-page {
+  min-height: 100vh;
+}
+
+.subpage-hero {
+  min-height: 68vh;
+  background-position: center 22%;
+}
+
+.subpage-hero .hero-content {
+  padding-top: 23vh;
+  padding-bottom: 10vh;
+}
+
+.subpage-section {
+  padding-top: clamp(52px, 6vw, 78px);
+}
+
+.info-banner {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 18px 20px;
+  border: 1px solid rgba(199, 166, 106, 0.22);
+  background:
+    linear-gradient(180deg, rgba(34, 28, 24, 0.9), rgba(17, 15, 13, 0.96));
+  box-shadow: var(--shadow);
+}
+
+.info-banner strong {
+  color: var(--gold);
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.info-banner p {
+  margin-bottom: 0;
+}
+
+.subpage-grid,
+.news-list,
+.login-capability-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.news-layout,
+.reserve-layout,
+.login-layout {
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.9fr);
+  align-items: start;
+}
+
+.news-card,
+.reserve-form-shell,
+.subpage-aside-card,
+.login-card {
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(33, 30, 26, 0.94), rgba(17, 16, 14, 0.98));
+  box-shadow: var(--shadow);
+}
+
+.news-card,
+.subpage-aside-card,
+.login-card {
+  padding: 24px;
+}
+
+.news-card h3,
+.subpage-aside-card h3,
+.login-card h3 {
+  margin-bottom: 12px;
+}
+
+.news-card p,
+.subpage-aside-card p,
+.login-card p {
+  margin-bottom: 0;
+}
+
+.news-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-bottom: 14px;
+  color: var(--faint);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+.news-category {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 5px 10px;
+  border: 1px solid rgba(199, 166, 106, 0.2);
+  background: rgba(199, 166, 106, 0.08);
+  color: var(--gold);
+}
+
+.subpage-aside {
+  display: grid;
+  gap: 18px;
+}
+
+.subpage-note-list {
+  display: grid;
+  gap: 10px;
+  padding-left: 18px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.reserve-form-shell {
+  padding: clamp(22px, 3vw, 30px);
+}
+
+.reserve-form {
+  display: grid;
+  gap: 18px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.form-field {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  border: 1px solid rgba(199, 166, 106, 0.12);
+  padding: 16px;
+  background: rgba(10, 10, 9, 0.32);
+}
+
+.form-field span,
+.form-field legend {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.form-field legend {
+  padding: 0;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  border: 1px solid rgba(199, 166, 106, 0.18);
+  padding: 12px 14px;
+  color: var(--text);
+  background: rgba(17, 16, 14, 0.92);
+  font: inherit;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: var(--faint);
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible,
+.form-field textarea:focus-visible {
+  border-color: rgba(199, 166, 106, 0.54);
+  outline: none;
+}
+
+.form-field-wide {
+  width: 100%;
+}
+
+.option-field {
+  min-width: 0;
+}
+
+.option-grid,
+.placeholder-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.choice-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid rgba(199, 166, 106, 0.18);
+  background: rgba(18, 16, 14, 0.82);
+  color: var(--muted);
+}
+
+.choice-chip input {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--gold);
+}
+
+.reserve-actions {
+  display: grid;
+  gap: 12px;
+}
+
+.btn-static {
+  cursor: not-allowed;
+}
+
+.reserve-form-note {
+  margin-bottom: 0;
+  color: var(--gold);
+}
+
+.login-capability-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.login-card {
+  min-height: 100%;
+}
+
+.login-placeholder-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.placeholder-badge-list span {
+  border: 1px solid rgba(199, 166, 106, 0.18);
+  padding: 8px 12px;
+  background: rgba(10, 10, 9, 0.42);
+  color: var(--gold);
+  font-size: 13px;
+}
+
 .site-footer {
   padding: 40px 22px 50px;
   text-align: center;
@@ -769,6 +1015,32 @@ p {
 .footer-brand,
 .footer-note {
   color: var(--text);
+}
+
+.footer-utility {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 20px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-utility a {
+  transition: color 180ms ease;
+}
+
+.footer-utility a:hover,
+.footer-utility a:focus-visible {
+  color: var(--gold);
+  outline: none;
+}
+
+.footer-download-placeholder {
+  margin-top: 12px;
+  color: var(--gold);
+  letter-spacing: 0.04em;
 }
 
 .footer-brand {
@@ -966,6 +1238,10 @@ p {
     padding: 24vh 0 10vh 18px;
   }
 
+  .subpage-hero .hero-content {
+    padding-top: 22vh;
+  }
+
   .site-nav {
     padding: 20px 18px;
   }
@@ -980,7 +1256,12 @@ p {
   .feature-grid,
   .lore-cards,
   .concept-grid,
-  .project-grid {
+  .project-grid,
+  .news-layout,
+  .reserve-layout,
+  .login-layout,
+  .login-capability-grid,
+  .form-row {
     grid-template-columns: 1fr;
   }
 
@@ -1023,6 +1304,10 @@ p {
     margin: 0 auto;
   }
 
+  .subpage-hero .hero-content {
+    padding-top: 26vh;
+  }
+
   .hero h1 {
     font-size: clamp(34px, 10vw, 48px);
   }
@@ -1047,7 +1332,11 @@ p {
   .feature-card-copy,
   .timeline-item,
   .project-panel,
-  .character-copy {
+  .character-copy,
+  .news-card,
+  .subpage-aside-card,
+  .login-card,
+  .reserve-form-shell {
     padding: 20px;
   }
 
@@ -1066,6 +1355,15 @@ p {
 
   .reveal-media {
     margin: 0 20px 20px;
+  }
+
+  .form-field {
+    padding: 14px;
+  }
+
+  .choice-chip,
+  .placeholder-badge-list span {
+    width: 100%;
   }
 
   .lightbox,

@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>临渊行 | 国风志怪叙事游戏概念官网</title>
     <meta name="description" content="《临渊行》国风志怪叙事游戏概念官网。以御敕玄观、灵性与器体质为线索，展开一场克制而悬疑的乱世冒险。">
+    <meta property="og:title" content="临渊行 | 国风志怪叙事游戏概念官网">
+    <meta property="og:description" content="《临渊行》国风志怪叙事游戏概念官网。当前阶段聚焦首页世界观、角色、场景与 PV 的静态展示。">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Hero：保留当前首屏视觉与交互，只补充未来入口。 -->
     <header class="hero" id="top">
         <nav class="site-nav" aria-label="主导航">
             <a class="brand" href="#top" aria-label="临渊行首页">
@@ -21,6 +24,9 @@
                 <a href="#characters">角色</a>
                 <a href="#map-trace">地图</a>
                 <a href="#project-title">Project</a>
+                <a href="news.html">新闻</a>
+                <a href="reserve.html">预约</a>
+                <a href="login.html">登录</a>
             </div>
         </nav>
 
@@ -47,6 +53,7 @@
     </header>
 
     <main>
+        <!-- PV：当前保留纯静态展示与原有播放交互。 -->
         <section class="section pv-section" id="pv" aria-labelledby="pv-title">
             <div class="section-heading">
                 <div>
@@ -70,6 +77,7 @@
             </div>
         </section>
 
+        <!-- Characters：保留人物卡片、展开与弹窗交互。 -->
         <section class="section character-section" id="characters" aria-labelledby="character-title">
             <div class="section-heading">
                 <div>
@@ -185,6 +193,7 @@
             </div>
         </section>
 
+        <!-- Map / Scenes：保留场景卡片与灯箱预览。 -->
         <section class="section map-section" id="map-trace" aria-labelledby="map-title">
             <div class="section-heading">
                 <div>
@@ -242,7 +251,8 @@
             </div>
         </section>
 
-        <section class="section archive-section" aria-labelledby="archive-title">
+        <!-- Archive：用于后续补充剧情时间线与旧案档案。 -->
+        <section class="section archive-section" id="archive" aria-labelledby="archive-title">
             <div class="section-heading">
                 <div>
                     <span class="section-kicker">ARCHIVE</span>
@@ -295,7 +305,8 @@
             </div>
         </section>
 
-        <section class="section lore-section" aria-labelledby="lore-title">
+        <!-- Lore：保留世界观卡片与折叠交互，后续只做内容扩展。 -->
+        <section class="section lore-section" id="lore" aria-labelledby="lore-title">
             <div class="section-heading">
                 <div>
                     <span class="section-kicker">LORE</span>
@@ -432,14 +443,22 @@
                 <div class="project-note">
                     <strong>Concept Website Demo</strong>
                     <p>本项目当前为概念官网与玩法原型方向展示，不对应完整游戏开发完工状态。</p>
+                    <p>Stage 1A 已完成静态官网结构，Stage 1B 将扩展新闻与预约页面。</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
+    <!-- Footer：提供未来静态入口占位，不接入真实下载或账号逻辑。 -->
+    <footer class="site-footer" id="site-footer">
         <p class="footer-brand">临渊行</p>
         <p>乱世未定，深渊仍在。</p>
+        <div class="footer-utility" aria-label="未来功能入口">
+            <a href="news.html">新闻</a>
+            <a href="reserve.html">预约</a>
+            <a href="login.html">登录</a>
+        </div>
+        <p class="footer-download-placeholder">下载入口：敬请期待，当前仅保留预约开启占位。</p>
         <p class="footer-note">Concept Website Demo</p>
     </footer>
 

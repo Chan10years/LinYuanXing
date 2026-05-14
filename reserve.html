@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预约入口 | 临渊行</title>
+    <meta name="description" content="《临渊行》概念官网静态预约入口页，仅展示未来预约流程的视觉结构，不收集任何用户信息。">
+    <meta property="og:title" content="预约入口 | 临渊行">
+    <meta property="og:description" content="《临渊行》概念官网预约入口占位页，当前仅为静态展示，不接入表单提交、短信验证或账号逻辑。">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="placeholder-page page-reserve">
+    <header class="hero subpage-hero" id="top">
+        <nav class="site-nav" aria-label="主导航">
+            <a class="brand" href="index.html" aria-label="返回临渊行首页">
+                <span>LYX</span>
+                临渊行
+            </a>
+            <div class="nav-links">
+                <a href="index.html#pv">前导影像</a>
+                <a href="index.html#characters">角色</a>
+                <a href="index.html#map-trace">地图</a>
+                <a href="news.html">新闻</a>
+                <a href="reserve.html">预约</a>
+                <a href="login.html">登录</a>
+            </div>
+        </nav>
+
+        <div class="hero-content subpage-hero-content">
+            <p class="eyebrow">RESERVATION GATE / STAGE 1B</p>
+            <h1>预约入口</h1>
+            <p class="hero-copy">
+                本页用于呈现未来预约流程的视觉结构与信息层级。当前不收集昵称、邮箱或平台信息，所有字段都仅作静态占位展示。
+            </p>
+            <ul class="hero-tags" aria-label="预约页标签">
+                <li>静态占位</li>
+                <li>未来流程预留</li>
+                <li>不提交数据</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section subpage-section" aria-labelledby="reserve-entry-title">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">ENTRY</span>
+                    <h2 id="reserve-entry-title">预约入口占位</h2>
+                </div>
+                <p>这是一张不可提交的预约表单 UI，用于模拟官网正式开放前的页面气质与交互排布。</p>
+            </div>
+
+            <div class="info-banner" role="note">
+                <strong>重要提示</strong>
+                <p>当前不收集任何信息，仅为未来预约流程的视觉占位。按钮不会提交数据，也不会触发短信、邮件或资格回执。</p>
+            </div>
+
+            <div class="subpage-grid reserve-layout">
+                <div class="reserve-form-shell">
+                    <form class="reserve-form" aria-label="预约占位表单">
+                        <div class="form-row">
+                            <label class="form-field" for="reserve-name">
+                                <span>昵称</span>
+                                <input id="reserve-name" name="reserve-name" type="text" placeholder="请输入昵称（仅展示）">
+                            </label>
+                            <label class="form-field" for="reserve-email">
+                                <span>邮箱</span>
+                                <input id="reserve-email" name="reserve-email" type="email"
+                                    placeholder="example@email.com（仅展示）">
+                            </label>
+                        </div>
+
+                        <div class="form-row">
+                            <label class="form-field" for="reserve-platform">
+                                <span>平台选择</span>
+                                <select id="reserve-platform" name="reserve-platform">
+                                    <option selected>PC</option>
+                                    <option>iOS</option>
+                                    <option>Android</option>
+                                </select>
+                            </label>
+                            <label class="form-field" for="reserve-region">
+                                <span>关注分区</span>
+                                <select id="reserve-region" name="reserve-region">
+                                    <option selected>国风剧情向</option>
+                                    <option>角色设定更新</option>
+                                    <option>世界观扩展日志</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <fieldset class="form-field form-field-wide option-field">
+                            <legend>关注内容</legend>
+                            <div class="option-grid">
+                                <label class="choice-chip">
+                                    <input type="checkbox" checked>
+                                    <span>首曝 PV</span>
+                                </label>
+                                <label class="choice-chip">
+                                    <input type="checkbox">
+                                    <span>角色情报</span>
+                                </label>
+                                <label class="choice-chip">
+                                    <input type="checkbox">
+                                    <span>测试资格</span>
+                                </label>
+                                <label class="choice-chip">
+                                    <input type="checkbox">
+                                    <span>制作日志</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <label class="form-field form-field-wide" for="reserve-note">
+                            <span>备注占位</span>
+                            <textarea id="reserve-note" name="reserve-note" rows="5"
+                                placeholder="此区域仅展示未来预约页可能出现的补充说明字段。"></textarea>
+                        </label>
+
+                        <div class="reserve-actions">
+                            <button class="btn btn-primary btn-static" type="button" aria-disabled="true">暂未开放</button>
+                            <p class="reserve-form-note">当前页面不接入真实预约、短信验证、下载资格或数据回传。</p>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="subpage-aside" aria-label="预约说明">
+                    <div class="subpage-aside-card">
+                        <span class="section-kicker">CURRENT STAGE</span>
+                        <h3>为什么先做占位</h3>
+                        <p>Stage 1B 先补齐预约入口的视觉状态，让首页跳转更完整，同时避免误导用户以为预约功能已经正式开放。</p>
+                    </div>
+                    <div class="subpage-aside-card">
+                        <span class="section-kicker">FUTURE FLOW</span>
+                        <h3>未来可扩展方向</h3>
+                        <ul class="subpage-note-list">
+                            <li>正式预约规则说明</li>
+                            <li>平台与资格选择流程</li>
+                            <li>预约结果回执与提示区</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-brand">临渊行</p>
+        <p>预约页当前只作为静态视觉占位，不收集任何真实信息。</p>
+        <div class="footer-utility" aria-label="页脚入口">
+            <a href="news.html">新闻</a>
+            <a href="reserve.html">预约</a>
+            <a href="login.html">登录</a>
+        </div>
+        <p class="footer-download-placeholder">按钮显示“暂未开放”，仅用于说明未来预约入口的位置与形式。</p>
+        <p class="footer-note">Concept Website Demo</p>
+    </footer>
+</body>
+
+</html>
