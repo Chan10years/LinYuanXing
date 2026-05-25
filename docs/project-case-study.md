@@ -22,6 +22,14 @@
 
 - `index.html`
   承担主叙事展示，包括 Hero、PV、角色、地图寻迹、剧情档案、Lore、玩法概念与 Project 区。
+- `characters.html`
+  承担角色档案栏目页，连接首页角色区与四名主要角色详情页。
+- `character-male.html`、`character-female.html`、`character-master.html`、`character-nameless.html`
+  承担角色详情页，分别展示主要角色身份、关键词、关联线索、玩家理解重点与静态片影留痕区域。
+- `archive.html`
+  承担剧情档案栏目页，整理首页时间线，并连接清河旧案与御敕玄观两份详情卷宗。
+- `archive-qinghe.html`、`archive-xuanguan.html`
+  承担剧情档案详情页，用静态卷宗方式补足主线旧案、玄观疑云与角色关系说明。
 - `news.html`
   用于展示阶段更新、公告与制作方向说明，建立“官网持续更新”的内容层次。
 - `reserve.html`

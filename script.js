@@ -9,8 +9,6 @@ const lightboxPrev = document.querySelector(".lightbox-prev");
 const lightboxNext = document.querySelector(".lightbox-next");
 const lightboxCopyTitle = document.querySelector(".lightbox-copy-title");
 const lightboxCopyBody = document.querySelector(".lightbox-copy-body");
-const characterPlayButtons = document.querySelectorAll("[data-character-play]");
-const characterExpandButtons = document.querySelectorAll("[data-character-expand]");
 const characterProfileButtons = document.querySelectorAll("[data-character-profile]");
 const characterModal = document.querySelector(".character-modal");
 const characterModalClose = document.querySelector(".character-modal-close");
@@ -216,7 +214,7 @@ const characterProfiles = {
       "他在旧案之后活了下来，也从那时起学会了如何在失序之中继续前行。为了求生，他被迫靠近本不该属于人的力量；为了不彻底偏离自己，他又必须时时提醒自己为何而战。",
       "在御敕玄观的山门之下，他既是弟子，也是被命运推到边缘的人。越是接近真相，他越明白真正艰难的并不只是斩妖，而是在借力之后仍不愿轻易认命。"
     ],
-    tags: ["乱世遗孤", "器体质", "临渊未坠"],
+    tags: ["器体质", "乱世遗孤", "临渊未坠", "旧案牵连"],
   },
   female: {
     title: "仍信人间有光的人",
@@ -225,7 +223,7 @@ const characterProfiles = {
       "她比许多人都更早意识到这个世道的残酷，却没有因此放弃善意。她知道秩序会崩塌，人心会动摇，也知道仍有人值得被救，仍有事值得被坚持。",
       "她既是同行者，也是那道始终提醒男主别彻底沉下去的目光。面对玄观深处的旧事，她未必最冷静，却往往最先看清什么东西仍值得守住。"
     ],
-    tags: ["器体质", "行侠之念", "心火未熄"],
+    tags: ["器体质", "同行者", "行侠之念", "心火未熄"],
   },
   nameless: {
     title: "游方的先见者",
@@ -234,7 +232,7 @@ const characterProfiles = {
       "他行走四方，像旁观者，也像旧案曾经的亲历者。许多他看见的东西并不能轻易说出口，许多他留下的话更像是给后来人的提示，而不是现成的答案。",
       "在这个关于玄观、灵性与旧事的故事里，他从不是喧宾夺主的人，却总会在最关键的地方留下足够让人重新回头的痕迹。"
     ],
-    tags: ["游方道人", "旁观者", "旧案残影"],
+    tags: ["旁观者", "游方道人", "旧案残影", "线索引路"],
   },
   master: {
     title: "沉默的观主",
@@ -243,7 +241,7 @@ const characterProfiles = {
       "他立观、收徒、斩妖，在乱世中为许多人撑起了仍可依附的一方山门。外人眼里，他是稳重而值得信任的正统观主；弟子眼里，他却也始终带着一些难以看透的沉默。",
       "每次异象平息之后，他总会亲自处理那些不便示人的痕迹。有些残痕被带回观中，有些旧事被留在池水与山门深处。究竟是谨慎、责任，还是别的原因，故事并不会太早给出结论。"
     ],
-    tags: ["正统道门", "御敕观主", "深藏旧事"],
+    tags: ["正统道门", "御敕观主", "深藏旧事", "师门疑云"],
   },
 };
 
@@ -408,62 +406,6 @@ loreToggles.forEach((button) => {
       item.classList.add("is-open");
       button.setAttribute("aria-expanded", "true");
       body.setAttribute("aria-hidden", "false");
-    }
-  });
-});
-
-characterPlayButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const card = button.closest(".character-card");
-    const panel = card.querySelector(".character-video-inline");
-    const video = panel ? panel.querySelector("video") : null;
-    const playLabel = button.dataset.labelPlay || "观看片段";
-    const pauseLabel = button.dataset.labelPause || "收起片段";
-
-    if (!panel || !video) {
-      return;
-    }
-
-    const isOpen = panel.classList.toggle("is-open");
-    panel.setAttribute("aria-hidden", String(!isOpen));
-
-    if (isOpen) {
-      video.muted = true;
-      video.loop = true;
-      video.play().catch(() => undefined);
-      button.textContent = pauseLabel;
-    } else {
-      video.pause();
-      video.currentTime = 0;
-      button.textContent = playLabel;
-    }
-  });
-});
-
-characterExpandButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const card = button.closest(".character-card");
-    const panelId = button.getAttribute("aria-controls");
-    const panel = panelId ? document.getElementById(panelId) : null;
-    const revealVideo = panel ? panel.querySelector("video") : null;
-    const isRevealed = card.classList.toggle("is-revealed");
-
-    button.setAttribute("aria-expanded", String(isRevealed));
-    button.textContent = isRevealed ? "收起锋芒" : "见其锋芒";
-
-    if (panel) {
-      panel.setAttribute("aria-hidden", String(!isRevealed));
-    }
-
-    if (revealVideo) {
-      if (isRevealed) {
-        revealVideo.muted = true;
-        revealVideo.loop = true;
-        revealVideo.play().catch(() => undefined);
-      } else {
-        revealVideo.pause();
-        revealVideo.currentTime = 0;
-      }
     }
   });
 });

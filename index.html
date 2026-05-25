@@ -7,7 +7,7 @@
     <title>临渊行 | 国风志怪叙事游戏概念官网</title>
     <meta name="description" content="《临渊行》是一个用于作品集展示的国风志怪叙事静态概念游戏官网，基于 HTML、CSS、JavaScript 构建，不包含真实登录、预约或后端服务。">
     <meta property="og:title" content="临渊行 | 国风志怪叙事游戏概念官网">
-    <meta property="og:description" content="《临渊行》当前处于 Stage 4A 工程化与交付质量提升阶段，聚焦稳定性、可维护性、部署说明与作品集可信度。">
+    <meta property="og:description" content="《临渊行》当前处于 Stage 4B / C1 Static Structure Build 阶段，聚焦三层静态页面结构、参赛表达与作品集可信度。">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="临渊行">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -19,12 +19,13 @@
     <header class="hero" id="top">
         <nav class="site-nav" aria-label="主导航">
             <a class="brand" href="#top" aria-label="临渊行首页">
-                <span>LYX</span>
-                临渊行
+                <img class="brand-logo" src="assets/logo-linyuanxing-navbar.png" alt="临渊行">
             </a>
             <div class="nav-links">
                 <a href="#pv">前导影像</a>
                 <a href="#characters">角色</a>
+                <a href="characters.html">角色档案</a>
+                <a href="archive.html">剧情档案</a>
                 <a href="#map-trace">地图</a>
                 <a href="#project-title">Project</a>
                 <a href="news.html">新闻</a>
@@ -87,10 +88,13 @@
                     <span class="section-kicker">CHARACTERS</span>
                     <h2 id="character-title">临渊之人</h2>
                 </div>
-                <p>有人被命运推到渊边，有人仍愿守住心火，也有人把答案藏进沉默里。</p>
+                <div class="section-heading-side">
+                    <p>有人被命运推到渊边，有人仍愿守住心火，也有人把答案藏进沉默里。</p>
+                    <a class="btn btn-ghost" href="characters.html">查看完整角色档案</a>
+                </div>
             </div>
 
-            <div class="character-board">
+            <div class="character-board character-board-home">
                 <article class="character-card character-card-large">
                     <div class="character-main-media">
                         <img src="assets/images/2.male-lead-character.png" alt="男主角色立绘">
@@ -100,30 +104,15 @@
                         <h3>半身临渊之人</h3>
                         <p>他被卷入玄观旧事，也被迫靠近本不该属于人的力量。越往前走，越要确认自己仍然站在人这一边。</p>
                         <ul class="character-tags-inline">
-                            <li>乱世遗孤</li>
                             <li>器体质</li>
+                            <li>乱世遗孤</li>
                             <li>临渊未坠</li>
+                            <li>旧案牵连</li>
                         </ul>
                         <div class="character-actions-row">
-                            <button class="character-action" type="button" data-character-play data-label-play="观看片段"
-                                data-label-pause="收起片段">观看片段</button>
-                            <button class="character-action" type="button" data-character-expand aria-expanded="false"
-                                aria-controls="male-skill-panel">见其锋芒</button>
                             <button class="character-action" type="button" data-character-profile
-                                data-character-id="male">查看人物</button>
-                        </div>
-                    </div>
-                    <div class="character-video-inline" aria-hidden="true">
-                        <video src="assets/videos/male-lead-face.mp4" playsinline preload="metadata" muted loop></video>
-                    </div>
-                    <div class="character-reveal" id="male-skill-panel" aria-hidden="true">
-                        <div class="reveal-copy">
-                            <span>斩妖片段</span>
-                            <strong>锋芒未尽</strong>
-                        </div>
-                        <div class="reveal-media">
-                            <video src="assets/videos/male-lead-bigskill.mp4" playsinline preload="metadata" muted
-                                loop></video>
+                                data-character-id="male">阅其小传</button>
+                            <a class="character-action" href="character-male.html">入其卷宗</a>
                         </div>
                     </div>
                 </article>
@@ -138,19 +127,15 @@
                         <p>她见过人心的裂痕，也知道善意在乱世里多么脆弱。可越是如此，她越不肯把救人当成笑话。</p>
                         <ul class="character-tags-inline">
                             <li>器体质</li>
+                            <li>同行者</li>
                             <li>行侠之念</li>
                             <li>心火未熄</li>
                         </ul>
                         <div class="character-actions-row">
-                            <button class="character-action" type="button" data-character-play data-label-play="观看片段"
-                                data-label-pause="收起片段">观看片段</button>
                             <button class="character-action" type="button" data-character-profile
-                                data-character-id="female">查看人物</button>
+                                data-character-id="female">阅其小传</button>
+                            <a class="character-action" href="character-female.html">入其卷宗</a>
                         </div>
-                    </div>
-                    <div class="character-video-inline" aria-hidden="true">
-                        <video src="assets/videos/female-lead-teaser.mp4" playsinline preload="metadata" muted
-                            loop></video>
                     </div>
                 </article>
 
@@ -166,10 +151,12 @@
                             <li>正统道门</li>
                             <li>御敕观主</li>
                             <li>深藏旧事</li>
+                            <li>师门疑云</li>
                         </ul>
                         <div class="character-actions-row">
                             <button class="character-action" type="button" data-character-profile
-                                data-character-id="master">查看人物</button>
+                                data-character-id="master">阅其小传</button>
+                            <a class="character-action" href="character-master.html">入其卷宗</a>
                         </div>
                     </div>
                 </article>
@@ -183,13 +170,15 @@
                         <h3>游方的先见者</h3>
                         <p>他行走于荒村、古城与山门之外，像一条被遗落在旧事边缘的线索。很多事他知道，却从不一次说完。</p>
                         <ul class="character-tags-inline">
-                            <li>游方道人</li>
                             <li>旁观者</li>
+                            <li>游方道人</li>
                             <li>旧案残影</li>
+                            <li>线索引路</li>
                         </ul>
                         <div class="character-actions-row">
                             <button class="character-action" type="button" data-character-profile
-                                data-character-id="nameless">查看人物</button>
+                                data-character-id="nameless">阅其小传</button>
+                            <a class="character-action" href="character-nameless.html">入其卷宗</a>
                         </div>
                     </div>
                 </article>
@@ -261,7 +250,10 @@
                     <span class="section-kicker">ARCHIVE</span>
                     <h2 id="archive-title">剧情档案</h2>
                 </div>
-                <p>所有旧事都不会无端消失，它们只是被妥善收起。</p>
+                <div class="section-heading-side">
+                    <p>所有旧事都不会无端消失，它们只是被妥善收起。</p>
+                    <a class="btn btn-ghost" href="archive.html">查看完整剧情档案</a>
+                </div>
             </div>
 
             <div class="timeline">
@@ -427,7 +419,7 @@
                     </div>
                     <div class="project-meta-item">
                         <span class="status-label">状态</span>
-                        <strong>Stage 2 / Static Portfolio Build</strong>
+                        <strong>Stage 4B / C1 Static Structure Build</strong>
                     </div>
                 </div>
                 <div class="project-grid">
@@ -449,7 +441,7 @@
                     </div>
                     <div>
                         <span class="project-label">当前完成</span>
-                        <p>已完成首页结构、多页静态占位、角色弹层、PV 展示、世界观文案、地图灯箱与响应式布局。</p>
+                        <p>已完成首页结构、角色档案页、剧情档案页、档案详情页、角色弹层、PV 展示、世界观文案、地图灯箱与响应式布局。</p>
                     </div>
                     <div>
                         <span class="project-label">当前边界</span>
@@ -467,7 +459,7 @@
                 <div class="project-note">
                     <strong>Concept Website Demo</strong>
                     <p>本项目当前为概念官网与玩法原型方向展示，强调内容包装、页面节奏与静态交互，而非完整游戏生产状态。</p>
-                    <p>Stage 1A 完成首页骨架与核心展示区块，Stage 1B 补充新闻、预约与登录占位页，Stage 2 继续强化内容纵深与作品集表达。</p>
+                    <p>Stage 1A 完成首页骨架与核心展示区块，Stage 1B 补充新闻、预约与登录占位页，Stage 4B 聚焦 C1 三层静态结构与链路验收。</p>
                 </div>
             </div>
         </section>
@@ -477,12 +469,14 @@
     <footer class="site-footer" id="site-footer">
         <p class="footer-brand">临渊行</p>
         <p>乱世未定，深渊仍在。</p>
-        <div class="footer-utility" aria-label="未来功能入口">
+        <div class="footer-utility" aria-label="页脚入口">
+            <a href="characters.html">角色档案</a>
+            <a href="archive.html">剧情档案</a>
             <a href="news.html">新闻</a>
             <a href="reserve.html">预约</a>
             <a href="login.html">登录</a>
         </div>
-        <p class="footer-download-placeholder">下载入口：敬请期待，当前仅保留预约开启占位。</p>
+        <p class="footer-download-placeholder">当前不提供真实下载或预约提交，仅保留静态入口说明。</p>
         <p class="footer-note">Concept Website Demo</p>
     </footer>
 
