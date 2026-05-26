@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界观档案库 | 临渊行</title>
+    <meta name="description" content="《临渊行》世界观档案库，收录人物、地点、势力、妖异、物件五类静态档案，并支持分类筛选。">
+    <meta property="og:title" content="世界观档案库 | 临渊行">
+    <meta property="og:description" content="围绕无名道人、师傅、御敕玄观、朝廷、古城、妖尸与旧案卷宗等设定建立的静态档案索引。">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="临渊行">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="placeholder-page page-world-archives">
+    <header class="hero subpage-hero" id="top">
+        <nav class="site-nav" aria-label="主导航">
+            <a class="brand" href="index.html" aria-label="返回临渊行首页">
+                <img class="brand-logo" src="assets/logo-linyuanxing-navbar.png" alt="临渊行">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="demo.html">参赛演示</a>
+                <a href="archives.html">世界观档案</a>
+                <a href="characters.html">角色档案</a>
+                <a href="archive.html">剧情档案</a>
+                <a href="index.html#map-trace">地图</a>
+                <a href="news.html">新闻</a>
+                <a href="reserve.html">预约</a>
+            </div>
+        </nav>
+        <div class="mobile-quick-links" aria-label="移动端快捷入口">
+            <a href="index.html">首页</a>
+            <a href="demo.html">演示</a>
+            <a href="archives.html">档案库</a>
+            <a href="archive.html">剧情</a>
+        </div>
+
+        <div class="hero-content subpage-hero-content">
+            <p class="eyebrow">WORLD ARCHIVES</p>
+            <h1>世界观档案库</h1>
+            <p class="hero-copy">
+                将散落在角色、剧情与地图中的设定归入人物、地点、势力、妖异、物件五类卷宗，作为《临渊行》原创 IP 的可扩展知识入口。
+            </p>
+            <div class="hero-actions" aria-label="世界观档案入口">
+                <a class="btn btn-primary" href="index.html">返回首页</a>
+                <a class="btn btn-ghost" href="#archive-library-title">进入档案库</a>
+                <a class="btn btn-ghost" href="demo.html">返回参赛演示</a>
+            </div>
+            <ul class="hero-tags" aria-label="世界观档案标签">
+                <li>人物</li>
+                <li>地点</li>
+                <li>势力</li>
+                <li>妖异</li>
+                <li>物件</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section subpage-section world-archive-section" aria-labelledby="archive-library-title">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">STATIC LORE DATABASE</span>
+                    <h2 id="archive-library-title">五类档案索引</h2>
+                </div>
+                <p>所有条目均为本地静态数据。点击分类可筛选对应档案，适合评委快速判断世界观是否具备继续扩写的骨架。</p>
+            </div>
+
+            <div class="archive-filter-panel" aria-label="档案分类筛选">
+                <div class="archive-filter-bar" role="group" aria-label="选择档案分类">
+                    <button class="archive-filter is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+                    <button class="archive-filter" type="button" data-filter="人物" aria-pressed="false">人物</button>
+                    <button class="archive-filter" type="button" data-filter="地点" aria-pressed="false">地点</button>
+                    <button class="archive-filter" type="button" data-filter="势力" aria-pressed="false">势力</button>
+                    <button class="archive-filter" type="button" data-filter="妖异" aria-pressed="false">妖异</button>
+                    <button class="archive-filter" type="button" data-filter="物件" aria-pressed="false">物件</button>
+                </div>
+                <p class="archive-count" aria-live="polite">当前显示 15 份档案</p>
+            </div>
+
+            <div class="world-archive-grid" aria-label="世界观档案列表">
+                <article class="news-card world-archive-card" data-category="人物">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">人物</span>
+                        <span>FILE P-01</span>
+                    </div>
+                    <h3>无名道人</h3>
+                    <p>游走于荒村、古城与山门之外的旁观者。他知道许多旧案边角，却从不一次说尽，更像把后来人引到真相边上的线索。</p>
+                    <ul class="character-tags-inline">
+                        <li>游方</li>
+                        <li>旧案见证</li>
+                        <li>线索引路</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="人物">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">人物</span>
+                        <span>FILE P-02</span>
+                    </div>
+                    <h3>师傅</h3>
+                    <p>御敕玄观观主，立观、收徒、斩妖，也把许多答案藏进沉默里。弟子敬他如师，却越来越难读懂他避而不谈的部分。</p>
+                    <ul class="character-tags-inline">
+                        <li>观主</li>
+                        <li>山门秩序</li>
+                        <li>沉默证词</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="人物">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">人物</span>
+                        <span>FILE P-03</span>
+                    </div>
+                    <h3>临渊弟子</h3>
+                    <p>被旧案推向玄观深处的主角一行。他们既要借灵性残痕求生，也要确认自己仍愿意站在人这一边。</p>
+                    <ul class="character-tags-inline">
+                        <li>器体质</li>
+                        <li>同行者</li>
+                        <li>旧案牵连</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="地点">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">地点</span>
+                        <span>FILE L-01</span>
+                    </div>
+                    <h3>御敕玄观</h3>
+                    <p>敕额高悬、香火未断的山门。它是乱世中被承认的秩序，也是不宜公开说明的异物、旧卷与灵性残痕的收容之处。</p>
+                    <ul class="character-tags-inline">
+                        <li>山门</li>
+                        <li>收容</li>
+                        <li>正统外衣</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="地点">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">地点</span>
+                        <span>FILE L-02</span>
+                    </div>
+                    <h3>古城旧地</h3>
+                    <p>城墙仍在，规矩也仍在。被封存的案卷、墙上的旧印与街巷间的沉默，都指向一场被刻意写薄的前朝旧事。</p>
+                    <ul class="character-tags-inline">
+                        <li>古城</li>
+                        <li>前朝旧事</li>
+                        <li>封存线索</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="地点">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">地点</span>
+                        <span>FILE L-03</span>
+                    </div>
+                    <h3>清河荒村</h3>
+                    <p>清河旧案最初浮现的地方。风雨、空屋与残页共同保存着一个未被盖棺的停顿，也是主线重新开卷的起点。</p>
+                    <ul class="character-tags-inline">
+                        <li>荒村</li>
+                        <li>旧案源头</li>
+                        <li>残页未终</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="势力">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">势力</span>
+                        <span>FILE F-01</span>
+                    </div>
+                    <h3>朝廷</h3>
+                    <p>以敕命赋予玄观正统名义的权力来源。它需要地方稳定，也需要有人替它处理无法写入明面公文的灵性异象。</p>
+                    <ul class="character-tags-inline">
+                        <li>敕命</li>
+                        <li>秩序背书</li>
+                        <li>公文之外</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="势力">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">势力</span>
+                        <span>FILE F-02</span>
+                    </div>
+                    <h3>玄观门人</h3>
+                    <p>在观主庇护下收容流离者、斩妖护民的一群人。门规维持秩序，也让某些问题被长期压在山门之后。</p>
+                    <ul class="character-tags-inline">
+                        <li>门规</li>
+                        <li>护民</li>
+                        <li>斩妖</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="势力">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">势力</span>
+                        <span>FILE F-03</span>
+                    </div>
+                    <h3>市井耳目</h3>
+                    <p>城镇之中的消息流动者。商贩、说书人、脚夫与过路客会把妖异传闻、旧案残句和朝廷动向悄悄带向下一处。</p>
+                    <ul class="character-tags-inline">
+                        <li>传闻</li>
+                        <li>市井</li>
+                        <li>消息交换</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="妖异">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">妖异</span>
+                        <span>FILE M-01</span>
+                    </div>
+                    <h3>妖尸</h3>
+                    <p>灵性失序后留下的可怖形态。它并非单纯的怪物，更像旧案、怨念与残器共同拖出的后果。</p>
+                    <ul class="character-tags-inline">
+                        <li>灵性失序</li>
+                        <li>怨念</li>
+                        <li>残器回响</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="妖异">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">妖异</span>
+                        <span>FILE M-02</span>
+                    </div>
+                    <h3>池影异兆</h3>
+                    <p>观主久立池边后常被弟子提及的异象。水面安静得像无事发生，水底却仿佛保存着某些不愿散去的影子。</p>
+                    <ul class="character-tags-inline">
+                        <li>池水</li>
+                        <li>倒影</li>
+                        <li>未散之事</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="妖异">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">妖异</span>
+                        <span>FILE M-03</span>
+                    </div>
+                    <h3>荒村夜声</h3>
+                    <p>清河荒村入夜后出现的回音。它可能来自井边、空屋，也可能来自仍未被安放的证词。</p>
+                    <ul class="character-tags-inline">
+                        <li>荒村</li>
+                        <li>回音</li>
+                        <li>证词残响</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="物件">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">物件</span>
+                        <span>FILE O-01</span>
+                    </div>
+                    <h3>旧案卷宗</h3>
+                    <p>清河旧案与玄观往事的纸面残留。卷宗看似只是记录，却能把人物、地点、势力与妖异重新牵到同一条线上。</p>
+                    <ul class="character-tags-inline">
+                        <li>案卷</li>
+                        <li>残页</li>
+                        <li>主线钥匙</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="物件">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">物件</span>
+                        <span>FILE O-02</span>
+                    </div>
+                    <h3>敕额</h3>
+                    <p>悬于玄观山门之上的名义。它让玄观行走民间有了正统身份，也让许多问题在权力背书下变得更难追问。</p>
+                    <ul class="character-tags-inline">
+                        <li>皇命</li>
+                        <li>正统</li>
+                        <li>山门门面</li>
+                    </ul>
+                </article>
+
+                <article class="news-card world-archive-card" data-category="物件">
+                    <div class="archive-card-meta">
+                        <span class="section-kicker">物件</span>
+                        <span>FILE O-03</span>
+                    </div>
+                    <h3>残符与封泥</h3>
+                    <p>从妖异现场带回玄观的证物。符灰、封泥与器物裂片既是收容记录，也是后续旧案可能重新响起的危险库存。</p>
+                    <ul class="character-tags-inline">
+                        <li>证物</li>
+                        <li>收容</li>
+                        <li>危险库存</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="site-footer">
+        <p class="footer-brand">临渊行</p>
+        <p>世界观档案库当前为本地静态数据展示，不接入后台、上传或真实检索服务。</p>
+        <div class="footer-utility" aria-label="页脚入口">
+            <a href="index.html">首页</a>
+            <a href="demo.html">参赛演示</a>
+            <a href="archives.html">世界观档案库</a>
+            <a href="characters.html">角色档案</a>
+            <a href="archive.html">剧情档案</a>
+        </div>
+        <p class="footer-note">Static Web Showcase</p>
+    </footer>
+
+    <script>
+        const archiveFilters = document.querySelectorAll(".archive-filter");
+        const archiveCards = document.querySelectorAll(".world-archive-card");
+        const archiveCount = document.querySelector(".archive-count");
+
+        function updateArchiveFilter(category) {
+            let visibleCount = 0;
+
+            archiveCards.forEach((card) => {
+                const shouldShow = category === "all" || card.dataset.category === category;
+                card.classList.toggle("is-hidden", !shouldShow);
+                if (shouldShow) {
+                    visibleCount += 1;
+                }
+            });
+
+            archiveFilters.forEach((button) => {
+                const isActive = button.dataset.filter === category;
+                button.classList.toggle("is-active", isActive);
+                button.setAttribute("aria-pressed", String(isActive));
+            });
+
+            archiveCount.textContent = `当前显示 ${visibleCount} 份档案`;
+        }
+
+        archiveFilters.forEach((button) => {
+            button.addEventListener("click", () => updateArchiveFilter(button.dataset.filter));
+        });
+    </script>
+</body>
+
+</html>

@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>临渊行 | 国风志怪叙事游戏概念官网</title>
-    <meta name="description" content="《临渊行》是一个用于作品集展示的国风志怪叙事静态概念游戏官网，基于 HTML、CSS、JavaScript 构建，不包含真实登录、预约或后端服务。">
-    <meta property="og:title" content="临渊行 | 国风志怪叙事游戏概念官网">
-    <meta property="og:description" content="《临渊行》当前处于 Stage 4B / C1 Static Structure Build 阶段，聚焦三层静态页面结构、参赛表达与作品集可信度。">
+    <title>临渊行 | 原创国风叙事 IP 交互式展示与宣发系统</title>
+    <meta name="description" content="《临渊行》是面向原创游戏、动画、数字文旅和学生路演项目的原创国风叙事 IP 交互式展示与宣发系统，基于 HTML、CSS、JavaScript 构建，不包含真实登录、预约或后端服务。">
+    <meta property="og:title" content="临渊行 | 原创国风叙事 IP 交互式展示与宣发系统">
+    <meta property="og:description" content="《临渊行》当前聚焦三层静态页面结构、世界观档案库、参赛演示路径与原创 IP 宣发系统表达。">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="临渊行">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -26,6 +26,8 @@
                 <a href="#characters">角色</a>
                 <a href="characters.html">角色档案</a>
                 <a href="archive.html">剧情档案</a>
+                <a href="archives.html">世界观档案</a>
+                <a href="demo.html">参赛演示</a>
                 <a href="#map-trace">地图</a>
                 <a href="#project-title">Project</a>
                 <a href="news.html">新闻</a>
@@ -42,9 +44,18 @@
                 乱世将倾，山门未闭。两个被旧事推入深处的人，在御敕玄观的香火与阴影之间，
                 一步步看见灵性失序之后，仍不肯向命运低头。
             </p>
+            <p class="hero-positioning">
+                面向原创游戏、动画、数字文旅和学生路演项目的原创国风叙事 IP 交互式展示与宣发系统。
+            </p>
             <div class="hero-actions" aria-label="首屏操作">
-                <button class="btn btn-primary" type="button" data-scroll-target="#pv">观看 PV</button>
+                <a class="btn btn-primary" href="demo.html">参赛展示入口</a>
+                <button class="btn btn-ghost" type="button" data-scroll-target="#pv">观看 PV</button>
                 <button class="btn btn-ghost" type="button" data-scroll-target="#map-trace">进入玄观</button>
+            </div>
+            <div class="hero-system-strip" aria-label="作品系统概览">
+                <span><strong>作品形态</strong>静态 Web 展示系统</span>
+                <span><strong>核心模块</strong>首页 / 档案库 / 角色卷宗 / 剧情档案 / 参赛演示</span>
+                <span><strong>部署方式</strong>本地打开 / ZIP 提交 / 静态部署</span>
             </div>
             <ul class="hero-tags" aria-label="项目标签">
                 <li>国风志怪</li>
@@ -57,7 +68,7 @@
     </header>
 
     <main>
-        <!-- PV：当前保留纯静态展示与原有播放交互。 -->
+        <!-- PV：当前保留 Static Web Showcase 与原有播放交互。 -->
         <section class="section pv-section" id="pv" aria-labelledby="pv-title">
             <div class="section-heading">
                 <div>
@@ -69,7 +80,7 @@
             <div class="video-shell">
                 <div class="video-meta" aria-hidden="true">
                     <span>TRAILER / 01</span>
-                    <span>Concept Website Demo</span>
+                    <span>Static Web Showcase</span>
                 </div>
                 <div class="video-stage">
                     <video class="main-video" src="assets/videos/pv.mp4" preload="metadata"
@@ -400,14 +411,14 @@
                     <span class="section-kicker">PROJECT</span>
                     <h2 id="project-title">Project</h2>
                 </div>
-                <p>作为作品集展示的概念官网，本页聚焦于世界观包装、静态交互编排与叙事型游戏官网的信息表达能力。</p>
+                <p>面向原创叙事 IP 的 Web 展示与路演系统，聚焦世界观包装、静态交互编排与参赛表达能力。</p>
             </div>
 
             <div class="project-panel">
                 <div class="project-meta-strip" aria-label="项目概览">
                     <div class="project-meta-item">
                         <span class="status-label">类型</span>
-                        <strong>国风志怪叙事游戏概念官网</strong>
+                        <strong>原创国风叙事 IP 展示与宣发系统</strong>
                     </div>
                     <div class="project-meta-item">
                         <span class="status-label">展示</span>
@@ -429,7 +440,7 @@
                     </div>
                     <div>
                         <span class="project-label">项目亮点</span>
-                        <p>通过主视觉、角色资料、PV、地图寻迹与世界观区块，建立一个具备游戏企划感的静态官网展示闭环。</p>
+                        <p>通过主视觉、角色资料、PV、地图寻迹、世界观档案库与参赛演示模式，建立一个可浏览、可探索、可展示的原创 IP 宣发闭环。</p>
                     </div>
                     <div>
                         <span class="project-label">我的职责</span>
@@ -441,7 +452,7 @@
                     </div>
                     <div>
                         <span class="project-label">当前完成</span>
-                        <p>已完成首页结构、角色档案页、剧情档案页、档案详情页、角色弹层、PV 展示、世界观文案、地图灯箱与响应式布局。</p>
+                        <p>已完成首页结构、角色档案页、剧情档案页、档案详情页、世界观档案库、参赛演示模式、角色弹层、PV 展示、地图灯箱与响应式布局。</p>
                     </div>
                     <div>
                         <span class="project-label">当前边界</span>
@@ -452,13 +463,13 @@
                         <p>继续补充新闻密度、地图线索、世界观档案与玩法说明，再视阶段推进高保真原型或战斗演示。</p>
                     </div>
                     <div>
-                        <span class="project-label">作品集表达</span>
-                        <p>重点不是宣称“已开发完成”，而是清楚展示概念包装、叙事调性控制与静态前端落地能力。</p>
+                        <span class="project-label">参赛表达</span>
+                        <p>重点不是宣称“已开发完成”，而是清楚展示原创 IP 包装、叙事调性控制与静态前端落地能力。</p>
                     </div>
                 </div>
                 <div class="project-note">
-                    <strong>Concept Website Demo</strong>
-                    <p>本项目当前为概念官网与玩法原型方向展示，强调内容包装、页面节奏与静态交互，而非完整游戏生产状态。</p>
+                    <strong>Interactive IP Showcase Demo</strong>
+                    <p>本项目当前为原创 IP 展示与路演系统方向的静态成果，强调内容包装、页面节奏与静态交互，而非完整商业系统生产状态。</p>
                     <p>Stage 1A 完成首页骨架与核心展示区块，Stage 1B 补充新闻、预约与登录占位页，Stage 4B 聚焦 C1 三层静态结构与链路验收。</p>
                 </div>
             </div>
@@ -470,6 +481,8 @@
         <p class="footer-brand">临渊行</p>
         <p>乱世未定，深渊仍在。</p>
         <div class="footer-utility" aria-label="页脚入口">
+            <a href="demo.html">参赛演示</a>
+            <a href="archives.html">世界观档案库</a>
             <a href="characters.html">角色档案</a>
             <a href="archive.html">剧情档案</a>
             <a href="news.html">新闻</a>
@@ -477,7 +490,7 @@
             <a href="login.html">登录</a>
         </div>
         <p class="footer-download-placeholder">当前不提供真实下载或预约提交，仅保留静态入口说明。</p>
-        <p class="footer-note">Concept Website Demo</p>
+        <p class="footer-note">参赛展示版本</p>
     </footer>
 
     <div class="lightbox" aria-hidden="true" role="dialog" aria-label="场景预览">
