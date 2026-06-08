@@ -1,0 +1,17 @@
+file 'D:/CodeLibrary/linyuanxing/submission/artifacts/video-slides/slide-01.jpg'
+duration 25
+file 'D:/CodeLibrary/linyuanxing/submission/artifacts/video-slides/slide-02.jpg'
+duration 25
+file 'D:/CodeLibrary/linyuanxing/submission/artifacts/video-slides/slide-03.jpg'
+duration 30
+file 'D:/CodeLibrary/linyuanxing/submission/artifacts/video-slides/slide-04.jpg'
+duration 30
+file 'D:/CodeLibrary/linyuanxing/submission/artifacts/video-slides/slide-05.jpg'
+duration 25
+file 'D:/CodeLibrary/linyuanxing/submission/artifacts/video-slides/slide-06.jpg'
+duration 25
+file 'D:/CodeLibrary/linyuanxing/submission/artifacts/video-slides/slide-07.jpg'
+duration 10
+file 'D:/CodeLibrary/linyuanxing/submission/artifacts/video-slides/slide-08.jpg'
+duration 5
+file 'D:/CodeLibrary/linyuanxing/submission/artifacts/video-slides/slide-08.jpg'
