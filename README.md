@@ -1,6 +1,6 @@
 # 临渊行
 
-《临渊行》是一个以国风志怪叙事为基调的静态概念游戏官网作品集项目，重点展示世界观包装、信息架构设计、页面节奏控制与纯前端静态落地能力。
+《临渊行》是一个原创国风志怪 IP 数字展陈宣发系统，以纯静态 Web 形式组织角色、剧情、地图、世界观、影像与宣发入口，重点展示内容展陈路径、页面关联、参赛表达与纯前端静态落地能力。
 
 ## Online Demo
 
@@ -8,23 +8,37 @@
 
 ## Project Positioning
 
-`临渊行` 当前是一个用于作品集展示的静态概念官网项目，不是已上线运营的真实游戏产品。
+`临渊行` 当前定位为原创国风志怪 IP 数字展陈宣发系统，不是已上线运营的真实游戏产品或真实业务系统。
 
-- 目标是练习并展示叙事型游戏官网的内容包装能力
-- 重点落在视觉氛围、世界观表达、信息架构与静态交互编排
-- 项目适合作为前端作品集、概念官网案例和 GitHub 展示仓库
+- 目标是将原创 IP 的角色、剧情、地图、世界观、影像与宣发入口组织成网页化展陈路径
+- 重点落在评审快速理解、作品集传播、早期 IP 提案与静态交互编排
+- 项目适合作为前端作品集、参赛提交版本和原创 IP 宣发系统案例
 
-## Project Screenshot Placeholder
+## Review Snapshot
 
-当前仓库暂未补入正式截图，本节保留为 GitHub 展示占位，后续可补充到 `docs/screenshots/`。
+| Item | Summary |
+| --- | --- |
+| 项目定位 | 原创国风志怪 IP 数字展陈宣发系统 |
+| 页面范围 | 首页、Demo 导览、角色总览与详情、剧情档案、世界观档案、宣发链路页与 404 |
+| 核心展陈模块 | 首页视觉、PV、角色卷宗、剧情档案、地图寻迹、世界观档案 |
+| 宣发链路模块 | 展陈宣发动态、关注意向路径、未来档案馆入口 |
+| 静态技术边界 | 纯 HTML / CSS / JavaScript，无后端、数据库、API、账号系统或真实信息收集 |
+| 建议浏览顺序 | 首页 → Demo 导览页 → 角色总览 → 角色详情 → 剧情档案 → 清河旧案 / 御敕玄观 → 世界观档案 → 宣发链路页 |
+
+## Project Screenshots
+
+当前正式展示截图仍建议后续整理到 `docs/screenshots/`。仓库内已有移动端与桌面检查截图，可作为阶段自检参考。
 
 | Screenshot | Suggested File | Status |
 | --- | --- | --- |
-| Homepage Hero | `docs/screenshots/home-hero.jpg` | Placeholder |
+| Homepage Hero | `artifacts/responsive-check/index-1024.png` | Check artifact |
+| Homepage Mobile | `artifacts/responsive-check/index-390.png` | Check artifact |
+| Demo Route | `artifacts/responsive-check/demo-1024.png` | Check artifact |
+| World Archives | `artifacts/responsive-check/archives-1024.png` | Check artifact |
 | Character Section | `docs/screenshots/characters.jpg` | Placeholder |
 | Map Trace Section | `docs/screenshots/map-trace.jpg` | Placeholder |
 | Project Section | `docs/screenshots/project-panel.jpg` | Placeholder |
-| Static Subpages | `docs/screenshots/subpages.jpg` | Placeholder |
+| 宣发链路页面 | `docs/screenshots/promo-chain.jpg` | Placeholder |
 
 ## Core Features
 
@@ -32,12 +46,12 @@
 - PV 展示与基础播放交互
 - 角色档案总页、四个角色详情页、角色卡片与人物弹层
 - 地图寻迹与场景灯箱预览
-- 剧情档案总页、清河旧案与御敕玄观两个档案详情页、Lore 与玩法概念展示
+- 剧情档案总页、清河旧案与御敕玄观两个档案详情页、Lore 与玩法概念展陈
 - 世界观档案库 `archives.html`，包含人物、地点、势力、妖异、物件五类静态筛选
-- 参赛演示模式 `demo.html`，按 NCDA 1-C1 3 分钟宣讲路径组织评委浏览路线
-- `news.html` 静态新闻列表页
-- `reserve.html` 静态预约入口占位页
-- `login.html` 静态登录入口占位页
+- 3 分钟展陈导览 `demo.html`，按 NCDA 1-C1 评委浏览路线组织项目价值说明
+- `news.html` 展陈宣发动态页
+- `reserve.html` 静态关注意向路径说明页
+- `login.html` 未来档案馆入口占位页
 - `404.html` 静态未找到页面
 - 响应式布局与多页面静态跳转结构
 
@@ -46,7 +60,7 @@
 - `index.html`
   首页主展示页，包含 Hero、PV、角色、地图寻迹、剧情档案、Lore、玩法概念与 Project 说明区。
 - `news.html`
-  用于承载阶段公告、更新说明与后续内容计划的静态新闻页。
+  展陈宣发动态页，用于承载项目动态、档案释出、PV 发布、角色公开、世界观更新与评审导览提示。
 - `characters.html`
   C1 三层页面结构中的角色档案栏目页，连接首页与四名主要角色详情页。
 - `archive.html`
@@ -54,7 +68,7 @@
 - `archives.html`
   世界观档案库页面，整理人物、地点、势力、妖异与物件五类设定，并提供本地静态筛选。
 - `demo.html`
-  参赛演示模式页面，按 3 分钟宣讲路径串联作品定位、设计目的、三层架构、核心体验、技术路线、创新实用性与后续改进。
+  3 分钟展陈导览页面，串联项目定位、首页视觉、角色展陈、剧情档案、地图寻迹、世界观档案、宣发入口、静态部署边界、创新价值与后续扩展。
 - `archive-qinghe.html`
   清河旧案详情页，展示旧案未明、男女主牵连、器体质关系与玩家主线理解。
 - `archive-xuanguan.html`
@@ -68,9 +82,9 @@
 - `character-nameless.html`
   无名道人角色详情页，展示旧案见证者身份、线索引导作用与片影留痕占位。
 - `reserve.html`
-  仅展示未来预约入口可能的视觉结构，不提供真实预约提交。
+  静态关注意向路径说明页，用于模拟早期 IP 宣发中的关注入口，不收集真实用户信息。
 - `login.html`
-  仅展示未来账号入口方向，不提供真实登录、认证或用户系统。
+  未来档案馆入口占位页，用于说明档案分级、角色卷宗与扩展内容入口设想，不提供真实认证或用户系统。
 - `404.html`
   用于补全站点回跳链路与错误访问场景的静态页面。
 
@@ -121,27 +135,27 @@
 - `Stage 4B Day 3D`
   完成参赛提交视角的全站文案一致性扫尾，统一 Stage 4B / C1 Static Structure Build 口径，复核导航、页脚、logo、静态边界、README 与阶段记录。
 - `Stage 4C`
-  进入 NCDA 1-C1 参赛 MVP 收口阶段，不继续扩充内容，聚焦 15 个静态页面、3 分钟宣讲脚本、评委演示路径、匿名合规检查与人工整理参赛材料清单。
+  进入 NCDA 1-C1 参赛提交收口阶段，不继续扩充真实功能，聚焦 15 个静态页面、3 分钟展陈导览、评委浏览路径、匿名合规检查与人工整理参赛材料清单。
 
 ## Stage 4C Focus
 
-当前阶段目标不是继续堆真实功能，而是把现有 15 个静态页面整理成可用于参赛展示的 NCDA 1-C1 静态网页 MVP。
+当前阶段目标不是继续堆真实功能，而是把现有 15 个静态页面整理成可用于参赛展示的原创国风志怪 IP 数字展陈宣发系统提交版本。
 
 - 保持纯 HTML、CSS、JavaScript，不迁移到任何新框架
-- 不接入真实登录、真实预约、数据库、CMS、后台或生产 API
-- 重点复核首页、参赛演示、世界观档案库、角色档案、剧情档案、详情页、新闻、预约、登录与 404 的入口链路
+- 不接入真实登录、真实信息收集、数据库、CMS、管理后台或生产 API
+- 重点复核首页、3 分钟展陈导览、世界观档案库、角色档案、剧情档案、详情页、展陈动态、关注意向、未来档案入口与 404 的入口链路
 - 同步准备可运行静态站点说明、60×80cm 展板文案、A3 宣传海报文案、3 分钟宣讲脚本与匿名合规检查
 - 优先提升参赛表达一致性、材料完整度、静态边界可信度与提交安全性
 
 ## Current Boundary
 
-本项目当前明确是一个静态概念官网与作品集项目，边界如下：
+本项目当前明确是原创国风志怪 IP 数字展陈宣发系统的纯静态参赛提交版本，边界如下：
 
 - 不接入真实登录
-- 不接入真实预约
+- 不接入真实信息收集或预约业务
 - 不接入数据库
 - 不接入 CMS
-- 不接入后台管理
+- 不接入管理后台
 - 不接入 API
 - 不提供真实下载、短信、邮件、上传或账号系统
 - 不收集用户信息
@@ -149,12 +163,12 @@
 
 ## C1 Submission Checklist
 
-- 页面结构：`index.html`、角色档案、剧情档案、详情页、新闻、预约、登录与 `404.html` 均保持可访问。
+- 页面结构：`index.html`、角色档案、剧情档案、详情页、展陈动态、关注意向、未来档案入口与 `404.html` 均保持可访问。
 - 参赛入口：`demo.html` 保持 3 分钟宣讲路径口径，`archives.html` 保持世界观档案库静态筛选。
-- 静态边界：不接入真实登录、预约、数据库、后台、CMS、API、上传、评论、收藏、统计或真实数据收集。
+- 静态边界：不接入真实登录、预约业务、数据库、管理后台、CMS、API、上传、评论、收藏、统计或真实数据收集。
 - 链接稳定：主要页面可回到首页，角色档案与剧情档案具备清楚入口，内部链接使用相对路径。
 - 内容完整度：角色档案覆盖四名主要角色，剧情档案覆盖总页与两份详情卷宗，首页 Project 区说明当前完成范围。
-- 作品集表达：项目被表述为静态概念官网作品集，不宣称真实游戏已完成或上线运营。
+- 作品集表达：项目被表述为原创国风志怪 IP 数字展陈宣发系统，不宣称真实游戏已完成或上线运营。
 - 部署说明：继续按静态站点方式部署，无构建命令、无后端环境，保留 `favicon.svg` 与 `404.html`。
 - 参赛材料：展板、A3 海报、作品简介图、3 分钟宣讲脚本、匿名检查表与可运行静态站点按人工清单整理，不作为自动化产物。
 - 匿名合规：提交给评委的作品、海报、宣讲脚本与展示图不得出现学校、作者姓名、指导教师姓名或其他赛事标识。
@@ -208,7 +222,7 @@ AI is used as a collaborative development aid, not as a substitute for product r
 
 ### 中文版
 
-独立完成《临渊行》静态概念游戏官网作品集项目，基于 HTML、CSS、JavaScript 搭建多页面展示结构，围绕国风志怪叙事主题完成首页主视觉、角色展示、地图线索、Lore、玩法概念与静态子页面设计。项目重点体现信息架构、内容包装、响应式页面实现与作品集表达能力，不包含真实登录、预约、后台、数据库或 API 接入。
+独立完成《临渊行》原创国风志怪 IP 数字展陈宣发系统，基于 HTML、CSS、JavaScript 搭建多页面静态展陈结构，围绕国风志怪叙事主题完成首页主视觉、角色卷宗、剧情档案、地图线索、世界观档案库、宣发入口与 3 分钟导览路径。项目重点体现信息架构、内容包装、响应式页面实现与参赛表达能力，不包含真实登录、预约、后台、数据库或 API 接入。
 
 ### English Version
 
@@ -218,7 +232,7 @@ Built `Linyuanxing`, a static concept game website project for portfolio present
 
 If you want a shorter one-line version for GitHub or portfolio cards:
 
-- 中文：国风志怪题材静态概念游戏官网作品集项目，展示信息架构、叙事包装与纯前端静态实现能力。
+- 中文：原创国风志怪 IP 数字展陈宣发系统，展示信息架构、叙事包装与纯前端静态实现能力。
 - English: A static concept game website project showcasing narrative packaging, information architecture, and frontend implementation skills.
 
 ## Related Docs
@@ -230,4 +244,4 @@ If you want a shorter one-line version for GitHub or portfolio cards:
 
 ## Project Statement
 
-`临渊行` is a static concept website demo created for portfolio and presentation purposes. It does not include real authentication, reservation handling, user data collection, backend services, database integration, CMS workflows, or production APIs.
+`临渊行` is a static digital exhibition and promotion system for an original Chinese dark-fantasy IP. It does not include real authentication, reservation handling, user data collection, backend services, database integration, CMS workflows, or production APIs.
