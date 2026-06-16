@@ -321,7 +321,7 @@ function closeLightbox() {
   lightbox.classList.remove("is-open");
   lightbox.setAttribute("aria-hidden", "true");
   document.body.classList.remove("lightbox-open");
-  lightboxImage.src = "";
+  lightboxImage.removeAttribute("src");
   lightboxImage.alt = "";
   lightboxCopyTitle.textContent = "";
   lightboxCopyBody.innerHTML = "";

@@ -25,8 +25,7 @@
 在仓库根目录运行：
 
 ```powershell
-$py='C:\Users\LSC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
-& $py submission\generate_materials.py
+python submission\generate_materials.py
 ```
 
 ## Anonymous Rule

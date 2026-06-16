@@ -302,7 +302,7 @@ def make_zip() -> Path:
     if output.exists():
         output.unlink()
     include_ext = {".html", ".css", ".js", ".svg", ".md", ".png", ".jpg", ".jpeg", ".mp4"}
-    skip_dirs = {".git", ".vscode", "submission"}
+    skip_dirs = {".git", ".vscode", "artifacts", "submission"}
     with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED) as zf:
         for path in ROOT.rglob("*"):
             if path.is_dir():
@@ -334,7 +334,7 @@ def write_report(video_ok: bool, narration_ok: bool, zip_path: Path) -> None:
         - Website keeps 15 static HTML pages.
         - Materials use anonymous review wording.
         - No backend, database, real login, real reservation, CMS, admin system or API is added.
-        - ZIP excludes `.git`, `.vscode`, `submission/artifacts` and local temporary files.
+        - ZIP excludes `.git`, `.vscode`, `artifacts`, `submission` and local temporary files.
 
         ## Manual Final Checks
 
